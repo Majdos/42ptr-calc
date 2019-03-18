@@ -7,11 +7,11 @@ Windows 64bit
 Autori
 ------
 
-Nazev tymu
-- xlogin01 jmeno prijmeni 
-- xlogin02 jmeno prijmeni 
-- xlogin03 jmeno prijmeni 
-- xlogin04 jmeno prijmeni 
+42ptr
+- xlorin01 Marián Lorinc 
+- xjavor20 Lukáš Javorský 
+- xondri08 Patrik Ondriga 
+- xvinar00 Peter Vinarčík  
 
 Licence
 -------
