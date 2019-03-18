@@ -1,0 +1,115 @@
+42ptr - xlorin01, xjavor20, xondri08, xvinar00
+IVS - Projekt 2 - Tímová spolupráca - Kalkulačka
+
+Datum: 18.3.2019
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+TERMÍNY:
+18.3.    Github, Slack inicializácie; plán
+25.3.    1. Šprint (testy mat. knižnice, mat. knižnica, makefile)
+3.4.     2. Šprint (nepovinná funkcie, návrh rozhrania)
+10.4.    3. Šprint (implementácia GUI, ovládanie, profilling)
+17.4.    4. Šprint (dokumentácia, manuál, nápoveda, inštalátor/uninštalátor)
+24.4.    5. Šprint (finálny produkt, mockup, ladenie, odovzdanie)
+do 2.5.  Vypísanie problémov
+11.5.    Inštalácia (všetci členovia sa zúčastnia)
+od 7.5.  Obhajoby (prezentácia)
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+PRIDELENIE ÚLOH:
+Testy  -------------------------------------------------------------  xvinar00, xondri08
+- TDD testy
+- Testy budú pokrývať naplánované funkcie
+
+Kontrola Formátovania  ---------------------------------------------  xlorin01
+- Kontrola formátovania a konzistentnosti
+
+Kontrola termínov  ---------------  xlorin01, xondri08
+- Kontrola členov tímu a ich práce podľa plánu
+- Dohliadanie na deadliny
+
+Správa GitHub Projects  --------------------------------------------  xjavor20
+- Správa a kontrola naplánovaného šprintu
+
+Makefile  ----------------------------------------------------------  xlorin01
+- Vytvorenie makefile
+
+Jednoduché aritmetické operácie  -----------------------------------  xjavor20, xvinar00
+- Programovanie "+, -, *, /"
+- Zdokumentovanie implementácie
+
+Zložitejšie aritmetické operácie  ----------------------------------- xjavor20, xvinar00
+- Programovanie operacií faktoriál, mocnina s 
+prirodzeným exponentom, obecná odmocnina a logaritmus
+- Zdokumentovanie implementácie
+
+Nepovinné funkcie  -------------------------------------------------  xondri08, xjavor20, xvinar00
+- Programovanie nepovinných funkcií
+- Plánované funkcie: absolútna hodnota, prevody sústav 
+  (binárna, oktálová, dekadická, hexadecimálna)
+- Zdokumentovanie implementácie
+
+Algoritmus pre zátvorky a prioritu matematických operátorov --------  xlorin01, xjavor20, xondri08, xvinar00
+- Navrhnutie algoritmu
+- Napísanie testov pre algoritmus
+- Implementácia algoritmu
+- Zdokumentovanie implementácie
+
+Profilling  --------------------------------------------------------  xlorin01
+- Vytvorenie programu pre profilling
+- Informovať tým o možných optimalizáciách
+
+Vzhľad (GUI) kalkulačky  -------------------------------------------  xlorin01
+- Vytvorenie grafickej stránky kalkulačky
+
+Ovládanie kalkulačky  ----------------------------------------------  xondri08, xjavor20
+- Programovanie jednotlivých tlačidiel a displeja
+
+Nápoveda  ----------------------------------------------------------  xvinar00
+- Vytvorenie nápovedy pre užívateľa
+
+Manuál  ------------------------------------------------------------  xlorin01
+- Vytvorenie kompletného manuálu
+
+Inštalátor/Uninštalátor   ------------------------------------------  xondri08
+- naprogramování instalátoru/odinstalátoru kalkulačky
+
+Prezentácia  -------------------------------------------------------  xjavor20
+- Vytvorenie prezentácie pre obhajobu
+- Každý člen tímu vytvorí text pre obhajobu a poverený člen
+  ich upraví a vloží do prezentácie
+
+Pozn.: Mockup bude robiť každý člen tímu sám, 
+       a vyberie sa najlepší z nich
+Pozn.: Pokiaľ nejaký člen dokončí svoju prácu, 
+       a všetko sa otestuje, môže ponúknuť spoluprácu
+       inému členovi, aby urýchlil proces vývoja
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+KOMUNIKAČNÝ KANÁL: Slack
+Slack je používaný vo forme chatu/fóra.
+Názov workspacu je IVS project.
+Názov kanálu pre komunikáciu ohľadom projektu je #42ptr.
+V Slacku využívame aplikácie, ktorá integruje
+funkcionalitu GitHubu a Google Calendar.
+Mimo Slacku sa pri väčšom probléme dohodneme 
+na stretnutí pred Whiteboard. 
+
+Vedúci tímu: xlorin01 (Marián Lorinc)
+Zastupuje tím pri komunikácii s odborným dozorom, dohliada na hladký
+priebeh vývoja projekt, rozdeluje úlohy medzi členami tímu rovným dielom
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+SYSTÉM PRE SPRÁVU VERZIÍ A HOSTING: GitHub
+Url pre cloning repozitár projetku: HTTPS -> https://github.com/Majdos/42ptr-calc.git
+                                    SSH   -> git@github.com:Majdos/42ptr-calc.git
+Url pre nahliadnutie: https://github.com/Majdos/42ptr-calc                                    
+Repozitár je prístupný pre email: ivs.kontrola@gmail.com
