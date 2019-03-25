@@ -18,3 +18,10 @@ build
 .idea
 
 # todo: doplnit ostatne IDE subory
+
+# Python stuff
+venv
+__pycache__
+
+# Docker files
+.env
