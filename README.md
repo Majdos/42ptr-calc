@@ -1,11 +1,17 @@
-Prostredi
----------
+# 42ptr Calc - Open Source
 
-Ubuntu 64bit
-Windows 64bit
+42ptr Calc je moderná kalkulačka. TODO: nieco vymysliet 
 
-Autori
-------
+## Zádkladná inštalácia pre vývoj
+
+Inštrukcie ako nainštalovať prostredie sú dostupné v [dokumentácii](https://github.com/Majdos/42ptr-calc/blob/master/doc/source/instalacia.md)
+
+## Cieľové platformy
+
+- Ubuntu 64bit
+- Windows 64bit
+
+## Autori
 
 42ptr
 - xlorin01 Marián Lorinc 
@@ -13,7 +19,6 @@ Autori
 - xondri08 Patrik Ondriga 
 - xvinar00 Peter Vinarčík  
 
-Licence
--------
+## Licencia
 
-Tento program je poskytovan...
+Tento program je poskytovany pod licenciou [GPLv3](https://github.com/Majdos/42ptr-calc/blob/master/LICENSE)
