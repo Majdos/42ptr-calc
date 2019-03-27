@@ -21,4 +21,4 @@ Inštrukcie ako nainštalovať prostredie sú dostupné v [dokumentácii](https:
 
 ## Licencia
 
-Tento program je poskytovany pod licenciou [GPLv3](https://github.com/Majdos/42ptr-calc/blob/master/LICENSE)
+Tento program je poskytovany pod licenciou [LGPL-3.0](https://github.com/Majdos/42ptr-calc/blob/master/LICENSE)
