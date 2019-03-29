@@ -1,10 +1,10 @@
 PYTHON_MAIN_FILE=main.py
 
 DOCS_DIRECTORY_NAME=doc
-DOCS_LOCATION=..
+DOCS_LOCATION=.
 
 TESTS_DIRECTORY_NAME=tests
-TESTS_LOCATION=..
+TESTS_LOCATION=.
 
 .PHONY: all pack clean test doc run install profile
 
@@ -19,7 +19,10 @@ clean:
 	# todo: smaže všechny soubory, co nemají být odevzdány
 
 test:
-	python -m unittest discover -s $(TESTS_LOCATION)/$(TESTS_DIRECTORY_NAME)/math_tests -v -p '*_test.py'
+	python -m unittest discover -s $(TESTS_DIRECTORY_NAME).math_tests -v -p '*_test.py'
+
+all-tests:
+	python -m unittest discover -s $(TESTS_DIRECTORY_NAME) -v -p '*_test.py'
 
 doc:
 	cd $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME) && make html
