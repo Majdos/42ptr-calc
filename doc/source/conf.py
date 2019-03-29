@@ -12,15 +12,15 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../../src'))
 
 # -- Project information -----------------------------------------------------
 
 project = '42ptr calc'
-copyright = '2019, Marián Lorinc, Lukáš Javorský, Patrik Ondriga, Peter Vinarčík'
+copyright = '2019, Marián Lorinc, Lukáš Javorský, Patrik Ondriga, Peter \
+Vinarčík'
 author = 'Marián Lorinc, Lukáš Javorský, Patrik Ondriga, Peter Vinarčík'
 
 # The short X.Y version
@@ -140,7 +140,8 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, '42ptrcalc.tex', '42ptr calc Documentation',
-     'Marián Lorinc, Lukáš Javorský, Patrik Ondriga, Peter Vinarčík', 'manual'),
+     'Marián Lorinc, Lukáš Javorský, Patrik Ondriga, Peter Vinarčík',
+     'manual'),
 ]
 
 
@@ -190,3 +191,16 @@ epub_exclude_files = ['search.html']
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
+
+html_theme_options = {
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
+}
