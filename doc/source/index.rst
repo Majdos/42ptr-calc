@@ -8,5 +8,6 @@ Welcome to 42ptr calc's documentation!
 
 .. toctree::
     :hidden:
-   
+
     instalacia.md
+    math.rst
