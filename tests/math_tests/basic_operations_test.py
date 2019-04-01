@@ -10,7 +10,7 @@ class BasicOperations(unittest.TestCase):
 
     def test_subtract(self):
         self.assertEqual(math.subtract(30, 20), 10)
-        self.assertEqual(math.subtract(30, -20), 40)
+        self.assertEqual(math.subtract(30, -20), 50)
         self.assertEqual(math.subtract(5, 20), -15)
 
     def test_multiplication(self):
@@ -20,10 +20,10 @@ class BasicOperations(unittest.TestCase):
     def test_division(self):
         self.assertEqual(math.division(36, 6), 6)
         self.assertAlmostEqual(math.division(9, 4), 2.25)
-        self.assertRaises(math.division(42, 0))
+        self.assertRaises(ValueError,math.division,42,0)
 
 
-class AdvanceOperations(unittest.TestCase):
+class AdvancedOperations(unittest.TestCase):
 
     def test_factorial(self):
         self.assertEqual(math.factorial(9), 362880)
@@ -39,9 +39,9 @@ class AdvanceOperations(unittest.TestCase):
 
     def test_ln(self):
         self.assertEqual(math.ln(1), 0)
-        self.assertAlmostEqual(math.naturalExponent(403.428793493), 6)
-        self.assertRaises(math.ln(0))
-        self.assertRaises(math.ln(-5))
+        self.assertAlmostEqual(math.ln(403.428793493),6)
+        self.assertRaises(ValueError, math.ln,0)
+        self.assertRaises(ValueError, math.ln,-5)
 
 
 if __name__ == '__main__':
