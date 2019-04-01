@@ -6,11 +6,10 @@ DOCS_LOCATION=.
 TESTS_DIRECTORY_NAME=tests
 TESTS_LOCATION=.
 
-.PHONY: all pack clean test doc run install profile
+.PHONY: all pack clean test all-tests doc run install profile
 
 # all (přeloží projekt - včetně programu pro profiling)
 all: install doc profile
-	pip install -r requirements.txt
 
 pack:
 	# todo: zabalí projekt tak, aby mohl být odevzdán
@@ -29,7 +28,6 @@ doc:
 
 run: install
 	# spusti aplikaciu
-	pip install -r requirements.txt
 	./$(PYTHON_MAIN_FILE)
 
 install:
