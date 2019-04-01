@@ -9,7 +9,7 @@ Datum: 18.3.2019
 TERMÍNY:
 18.3.    Github, Slack inicializácie; plán
 25.3.    1. Šprint (testy mat. knižnice, mat. knižnica, makefile)
-3.4.     2. Šprint (nepovinná funkcie, návrh rozhrania)
+3.4.     2. Šprint (nepovinné funkcie, návrh rozhrania)
 10.4.    3. Šprint (implementácia GUI, ovládanie, profilling)
 17.4.    4. Šprint (dokumentácia, manuál, nápoveda, inštalátor/uninštalátor)
 24.4.    5. Šprint (finálny produkt, mockup, ladenie, odovzdanie)
