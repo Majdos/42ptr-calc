@@ -38,7 +38,7 @@ class MathParser(object):
         self._tokens = tokens
         self._token_index = -1
         self._curr_token = None
-        self._operator_precedences = list(map(lambda op: op.precedence, operators))
+        self._operator_precedences = sorted(list(map(lambda op: op.precedence, operators)))
         self._next()
 
     def _get_sub_parser(self, tokens: List[Token]):

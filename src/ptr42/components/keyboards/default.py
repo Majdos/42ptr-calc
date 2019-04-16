@@ -16,7 +16,7 @@ def get_default_keyboard(calculator: Calculator):
             key_value = str(3 * (i - 1) + j)
             keyboard.register_constant(key_value, Constant(key_value), default_keyboard_rows - i, j)
 
-    keyboard.register_function("|x|", Function(math42.absolute_number, 1), default_keyboard_rows,
+    keyboard.register_function("abs", Function(math42.absolute_number, 1), default_keyboard_rows,
                                default_keyboard_cols / 2 - 1)
     keyboard.register_constant("0", Constant("0"), default_keyboard_rows, default_keyboard_cols / 2)
     keyboard.register_action(QtCore.QLocale().decimalPoint(), Action.DECIMAL, default_keyboard_rows,
@@ -34,7 +34,7 @@ def get_default_keyboard(calculator: Calculator):
     keyboard.register_function("root", Function(math42.root, 2), default_keyboard_rows - 3,
                                default_keyboard_cols / 2 - 2)
 
-    keyboard.register_function("x!", Function(math42.factorial, 1), default_keyboard_rows - 4,
+    keyboard.register_function("fact", Function(math42.factorial, 1), default_keyboard_rows - 4,
                                default_keyboard_cols / 2 - 2)
 
     keyboard.register_action("=", Action.EVALUATE, default_keyboard_rows,

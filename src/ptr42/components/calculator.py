@@ -1,13 +1,15 @@
 from enum import Enum
 from string import ascii_letters
 
-from PySide2 import QtWidgets
+from PySide2 import QtWidgets, QtCore
 
 from ptr42.components.calculator_button import Action
 from ptr42.components.calculator_keyboard import CalculatorKeyboard
 from ptr42.components.screen import CalculatorScreen
 from ptr42.math_language.parser.expression import Constant, Operator, Function
-
+from ptr42.math_language.lexer.lexer import MathLexer
+from ptr42.math_language.parser.parser import MathParser
+from ptr42.math_language.lexer.default_lexer import get_default_lexer
 
 class CalculatorState(Enum):
     IN_FUNCTION = 1
@@ -55,9 +57,12 @@ class Calculator(QtWidgets.QWidget):
     def _on_action_input(self, name: str, action: Action):
         if action == Action.CLEAR:
             self._screen.setText("")
-        # elif action == Action.EVALUATE:
-        #   todo: pouzije sa Lexer
-        # elif action == Action.TABULATOR:
-        #   todo: pouzije sa Lexer
-        # elif action == Action.TABULATOR_REVERSED:
-        #   todo: pouzije sa Lexer
+        elif action == Action.EVALUATE:
+            lexer = get_default_lexer(self._screen.text())
+            tokens = list(lexer.generate_tokens())
+            print(tokens)
+            parser = MathParser(tokens, lexer.get_operators())
+            ast = parser.parse()
+            self._screen.setText(str(ast.evaluate()))
+        elif action == Action.DECIMAL:
+            self._screen.insertText(".")
