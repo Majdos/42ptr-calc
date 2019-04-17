@@ -60,7 +60,6 @@ class Calculator(QtWidgets.QWidget):
         elif action == Action.EVALUATE:
             lexer = get_default_lexer(self._screen.text())
             tokens = list(lexer.generate_tokens())
-            print(tokens)
             parser = MathParser(tokens, lexer.get_operators())
             ast = parser.parse()
             self._screen.setText(str(ast.evaluate()))
