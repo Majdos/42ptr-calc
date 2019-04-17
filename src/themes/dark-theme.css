@@ -1,0 +1,49 @@
+/*
+    alert color: #d50000
+    teal color: #00796b
+    blue color: #1976d2
+ */
+
+
+QPushButton {
+    background-color: transparent;
+    color: #DEDEDE;
+    border-radius: 4px;
+}
+
+QPushButton:hover, QPushButton:focus {
+    background-color: #1976d2; /*rgba(36, 67, 194, .6);*/
+    outline: none;
+}
+
+QLineEdit {
+    padding: 16px;
+    margin-bottom: 8px;
+    font-size: 32px;
+    background-color: transparent;
+    color: #DEDEDE;
+    selection-background-color: #1976d2;
+
+    border: none;
+    border-bottom: 2px solid #DEDEDE;
+}
+
+
+QLineEdit:focus {
+    border-bottom: 2px solid #1976d2;
+}
+
+QLineEdit[hasError="True"] {
+    border-bottom: 2px solid #d50000 !important;
+}
+
+#error-label {
+    color: #DEDEDE !important;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+
+#container {
+    background-color: #0D0D14;
+}

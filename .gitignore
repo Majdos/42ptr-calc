@@ -17,8 +17,6 @@ build
 .vscode
 .idea
 
-# todo: doplnit ostatne IDE subory
-
 # Python stuff
 venv
 __pycache__
@@ -26,3 +24,6 @@ __pycache__
 
 # Docker files
 .env
+
+# Compiled i18n messages
+*.mo

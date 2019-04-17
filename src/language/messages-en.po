@@ -1,0 +1,83 @@
+# Translations template for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#,
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-04-17 21:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ptr42/components/calculator.py:73
+msgid "Zadajte vyraz"
+msgstr "Enter expression"
+
+#: ptr42/components/calculator.py:84
+msgid "Chyba vyrazu"
+msgstr "Invalid expression"
+
+#: ptr42/math_language/lexer/lexer.py:97
+#, python-format
+msgid "Nespravny identifikator na pozicii %d"
+msgstr "Invalid identifier on position %d"
+
+#: ptr42/math_language/lexer/lexer.py:105
+msgid "Nespravne umiestnena ciarka"
+msgstr "Misplaced comma"
+
+#: ptr42/math_language/lexer/lexer.py:129
+#: ptr42/math_language/lexer/lexer.py:142
+msgid "Nezhodne zatvorky"
+msgstr "Mismatched parenthesis"
+
+#: ptr42/math_language/lexer/lexer.py:136
+#, python-format
+msgid "Neznamy znak '%c'"
+msgstr "Unknown character '%c'"
+
+#: ptr42/math_language/lexer/lexer.py:155
+msgid "Cislo uz ma desatinnu ciarku!"
+msgstr "Number cannot contain more than 1 decimal point"
+
+#: ptr42/math_language/lexer/lexer.py:177
+#, python-format
+msgid "Premenna '%s' neexistuje!"
+msgstr "Variable '%s' does not exist!"
+
+#: ptr42/math_language/lexer/lexer.py:183
+#, python-format
+msgid "Funkcia '%s' neexistuje!"
+msgstr "Function '%s' does not exist!"
+
+#: ptr42/math_language/lexer/lexer.py:199
+#, python-format
+msgid "Funkcia '%s' nie je spravne uzatvorkovana"
+msgstr "Function '%s' is not closed properly"
+
+#: ptr42/math_language/parser/parser.py:72
+#, python-format
+msgid "Unarny operator %s neexistuje"
+msgstr "Unary operator %s does not exist"
+
+#: ptr42/math_language/parser/parser.py:77
+#, python-format
+msgid "Duplikovany operator %s"
+msgstr "Invalid sequence of operators"
+
+#: ptr42/math_language/parser/parser.py:84
+msgid "Nespravny factor"
+msgstr "Error!"
+
+#: ptr42/math_language/parser/parser.py:98
+msgid "Chybne uzatvorkovanie"
+msgstr "Mismatched parenthesis"
+

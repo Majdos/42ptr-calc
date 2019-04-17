@@ -1,6 +1,7 @@
+import gettext
 import sys
 
-from PySide2 import QtWidgets, QtGui
+from PySide2 import QtWidgets, QtGui, QtCore
 
 from ptr42.components.calculator import Calculator
 from ptr42.components.keyboards.default import get_default_keyboard
@@ -8,7 +9,23 @@ from ptr42.components.keyboards.default import get_default_keyboard
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
 
+    try:
+        country_code = QtCore.QLocale().name().split("_")[0]
+        lang = gettext.translation("messages", "./language", [country_code])
+        lang.install()
+    except FileNotFoundError:
+        lang = gettext.translation("messages", "./language", ["sk"])
+        lang.install()
+
+    file = QtCore.QFile("themes/native-theme.css")
+    file.open(QtCore.QFile.ReadOnly)
+
+    style = QtCore.QTextStream(file).readAll()
+
+    app.setStyleSheet(style)
+
     container = QtWidgets.QWidget()
+    container.setObjectName("container")
     container.setSizePolicy(QtWidgets.QSizePolicy.Maximum,
                             QtWidgets.QSizePolicy.Maximum)
 

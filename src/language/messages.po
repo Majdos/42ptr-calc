@@ -1,0 +1,83 @@
+# Translations template for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#,
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-04-17 21:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ptr42/components/calculator.py:73
+msgid "Zadajte vyraz"
+msgstr "Zadajte príklad"
+
+#: ptr42/components/calculator.py:84
+msgid "Chyba vyrazu"
+msgstr "Chybný príklad"
+
+#: ptr42/math_language/lexer/lexer.py:97
+#, python-format
+msgid "Nespravny identifikator na pozicii %d"
+msgstr "Nespravný identifikátor na pozícii %d"
+
+#: ptr42/math_language/lexer/lexer.py:105
+msgid "Nespravne umiestnena ciarka"
+msgstr "Nesprávne umiestnená desatiná čiarka"
+
+#: ptr42/math_language/lexer/lexer.py:129
+#: ptr42/math_language/lexer/lexer.py:142
+msgid "Nezhodne zatvorky"
+msgstr "Nesprávne rozloženie zátvoriek"
+
+#: ptr42/math_language/lexer/lexer.py:136
+#, python-format
+msgid "Neznamy znak '%c'"
+msgstr "Nerozoznaný znak '%c'"
+
+#: ptr42/math_language/lexer/lexer.py:155
+msgid "Cislo uz ma desatinnu ciarku!"
+msgstr "Číslo už obsahuje desatinnú čiarku"
+
+#: ptr42/math_language/lexer/lexer.py:177
+#, python-format
+msgid "Premenna '%s' neexistuje!"
+msgstr "Premenná '%s' neexistuje!"
+
+#: ptr42/math_language/lexer/lexer.py:183
+#, python-format
+msgid "Funkcia '%s' neexistuje!"
+msgstr "Funkcia '%s' neexistuje!"
+
+#: ptr42/math_language/lexer/lexer.py:199
+#, python-format
+msgid "Funkcia '%s' nie je spravne uzatvorkovana"
+msgstr "Funkcia '%s' nie je správne uzátvorkovaná"
+
+#: ptr42/math_language/parser/parser.py:72
+#, python-format
+msgid "Unarny operator %s neexistuje"
+msgstr "Unárny operator %s neexistuje"
+
+#: ptr42/math_language/parser/parser.py:77
+#, python-format
+msgid "Duplikovany operator %s"
+msgstr "Nesprávna sekvencia operátorov"
+
+#: ptr42/math_language/parser/parser.py:84
+msgid "Nespravny factor"
+msgstr "Chyba!"
+
+#: ptr42/math_language/parser/parser.py:98
+msgid "Chybne uzatvorkovanie"
+msgstr "Chybné uzátvorkovanie"
+

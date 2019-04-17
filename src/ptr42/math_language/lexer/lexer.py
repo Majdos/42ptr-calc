@@ -2,6 +2,7 @@ from copy import deepcopy
 from string import ascii_letters
 from typing import Dict, Optional, List, ValuesView, Iterable
 
+from ptr42.math_language.lexer.expression_error import ExpressionError
 from ptr42.math_language.lexer.function_token import FunctionToken
 from ptr42.math_language.lexer.token import TokenTypes, Token
 from ptr42.math_language.parser.expression import Operator, Function
@@ -93,7 +94,7 @@ class MathLexer(object):
                 elif self._current_char not in DIGITS:
                     yield self._make_variable()
                 else:
-                    raise ValueError(f"Nespravny identifikator na pozicii {self._pos}")
+                    raise ExpressionError(_("Nespravny identifikator na pozicii %d") % self._pos)
 
             elif self._current_char == ",":
                 if self._in_function:
@@ -101,7 +102,7 @@ class MathLexer(object):
                     self._next()
                     yield Token(TokenTypes.COMMA_TOKEN, None)
                 else:
-                    raise ValueError("Nespravne umiestnena ciarka")
+                    raise ExpressionError(_("Nespravne umiestnena ciarka"))
 
             elif self._current_char in " \t":
                 self._current_identifier = None
@@ -125,20 +126,20 @@ class MathLexer(object):
 
             elif self._current_char == ")":
                 if not self._paren_stack:
-                    raise ValueError("Nezhodne zatvorky")
+                    raise ExpressionError(_("Nezhodne zatvorky"))
 
                 self._paren_stack.pop()
                 yield Token(TokenTypes.RPAREN_TOKEN, None)
                 self._next()
 
             else:
-                raise ValueError(f"Neznamy znak '{self._current_char}'")
+                raise ExpressionError(_("Neznamy znak '%c'") % self._current_char)
 
         if self._current_identifier is not None:
             yield self._make_variable()
 
         if self._paren_stack:
-            raise ValueError("Nezhodne zatvorky")
+            raise ExpressionError(_("Nezhodne zatvorky"))
 
     def _make_number(self) -> Token:
         number_string = ""
@@ -151,7 +152,7 @@ class MathLexer(object):
                 number_string += "."
                 has_dot = True
             else:
-                raise ValueError("Cislo uz ma desatinnu ciarku!")
+                raise ExpressionError(_("Cislo uz ma desatinnu ciarku!"))
 
             self._next()
 
@@ -173,13 +174,13 @@ class MathLexer(object):
             self._current_identifier = None
             return token
         except KeyError:
-            raise KeyError(f"Premenna {self._current_identifier} neexistuje!")
+            raise ExpressionError(_("Premenna '%s' neexistuje!") % self._current_identifier)
 
     def _make_function(self) -> FunctionToken:
         args_tokens = list()
 
         if self._current_identifier not in self._functions.keys():
-            raise KeyError(f"Funkcia {self._current_identifier} neexistuje!")
+            raise ExpressionError(_("Funkcia '%s' neexistuje!") % self._current_identifier)
 
         # self.current_char musi byt (, tak ho ignorujem
         self._next()
@@ -195,7 +196,7 @@ class MathLexer(object):
             self._next()
 
         if self._current_char is None and stack:
-            raise ValueError(f"Funkcia '{self._current_identifier}' nie je spravne uzatvorkovana")
+            raise ExpressionError(_("Funkcia '%s' nie je spravne uzatvorkovana") % self._current_identifier)
 
         end = self._pos - 1
 
