@@ -28,7 +28,7 @@ ktorú má užívateľ nastavenú vo svojom systéme.
 Prvý krok je naklonovanie repozitára do vášho zariadenia, pre túto akciu stačí napísať jednoduchý príkaz do konzoly:  
 ```git clone https://github.com/Majdos/42ptr-calc.git```
 
-### Nainštalovanie kalkulačky
+### Inštalácia zo zdrojového kódu
 Najprv sa musíte premiestniť do priečinka, ktorý ste naklonovali v predošlom kroku.  
 //TODO základný postup inštalácie  
 Presnejšie inštrukcie ako nainštalovať prostredie sú dostupné v [dokumentácii](https://github.com/Majdos/42ptr-calc/blob/master/doc/source/instalacia.md)
