@@ -40,10 +40,10 @@ Ubuntu 64bit
 ## Autori
 
 42ptr
-- xlorin01 Marián Lorinc 
-- xjavor20 Lukáš Javorský 
-- xondri08 Patrik Ondriga 
-- xvinar00 Peter Vinarčík  
+- xlorin01 Marián Lorinc ([Majdos](https://github.com/Majdos))
+- xjavor20 Lukáš Javorský ([xjavor20](https://github.com/xjavor20))
+- xondri08 Patrik Ondriga ([tenOndro](https://github.com/tenOndro))
+- xvinar00 Peter Vinarčík ([bixorko](https://github.com/bixorko))
 
 ## Licencia
 
