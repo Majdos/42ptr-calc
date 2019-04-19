@@ -1,6 +1,6 @@
 =========================================================
-Matematicka kniznica
+Matematická knižnica
 =========================================================
-.. automodule:: math42
+.. automodule:: ptr42.math42
     :members:
 

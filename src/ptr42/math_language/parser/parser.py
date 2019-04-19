@@ -35,7 +35,7 @@ class MathParser(object):
         """
 
         if not tokens:
-            raise ValueError("Tokeny su prazdne")
+            raise ValueError("Tokens cannot by empty")
 
         self._tokens = tokens
         self._token_index = -1
@@ -69,19 +69,19 @@ class MathParser(object):
 
         elif token.type == TokenTypes.OPERATOR_TOKEN:
             if token.value.unary_func is None:
-                raise ExpressionError(_("Unarny operator %s neexistuje") % token.value)
+                raise ExpressionError(_("Unary operator %s does not exist") % token.value)
 
             self._next()
 
             if self._curr_token.type == TokenTypes.OPERATOR_TOKEN:
-                raise ExpressionError(_("Duplikovany operator %s") % token.value)
+                raise ExpressionError(_("Duplicate operator %s") % token.value)
 
             factor = self._factor()
 
             if factor is not None:
                 return UnaryOperatorNode(token, factor)
             else:
-                raise ExpressionError(_("Nespravny factor"))
+                raise ExpressionError(_("Invalid factor"))
 
         elif token.type in (TokenTypes.INT_TOKEN, TokenTypes.FLOAT_TOKEN, TokenTypes.VARIABLE_TOKEN):
             self._next()
@@ -95,10 +95,10 @@ class MathParser(object):
                 self._next()
                 return expr
             else:
-                raise ExpressionError(_("Chybne uzatvorkovanie"))
+                raise ExpressionError(_("Mismatched parenthesis"))
 
         elif token is not None:
-            raise ParserError(f"Nemozem skonzumovat aktualny token - {self._curr_token}")
+            raise ParserError(f"Cannot consume token - {self._curr_token}")
 
         return None
 

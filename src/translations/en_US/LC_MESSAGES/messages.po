@@ -1,0 +1,116 @@
+# English (United Kingdom) translations for PROJECT.
+# Copyright (C) 2019 42ptr
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-04-19 23:43+0200\n"
+"PO-Revision-Date: 2019-04-19 23:40+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en_GB\n"
+"Language-Team: en_GB <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: src/ptr42/math42.py:61
+msgid "Division of 0 is undefined"
+msgstr "Division of 0 is undefined"
+
+#: src/ptr42/math42.py:77
+msgid "Factorial: value must be positive integral value or zero"
+msgstr "Factorial: value must be positive integral value or zero"
+
+#: src/ptr42/math42.py:111
+msgid "ln: argument must be greater than 0"
+msgstr "ln: argument must be greater than 0"
+
+#: src/ptr42/math42.py:125
+msgid "sqrt: argument must be greater or equal zero"
+msgstr "sqrt: argument must be greater or equal zero"
+
+#: src/ptr42/math42.py:139
+msgid "root: first argument must be greater or equal zero"
+msgstr ""
+
+#: src/ptr42/math42.py:142
+msgid "root: second argument must be greater than zero"
+msgstr ""
+
+#: src/ptr42/math42.py:161
+msgid "Number must be in binary format"
+msgstr "Number must be in binary format"
+
+#: src/ptr42/math42.py:178
+msgid "Number must be in hexadecimal format"
+msgstr "Number must be in hexadecimal format"
+
+#: src/ptr42/math42.py:195
+msgid "Number must be in octal format"
+msgstr "Number must be in octal forma"
+
+#: src/ptr42/components/calculator.py:88
+msgid "Enter expression"
+msgstr "Enter expression"
+
+#: src/ptr42/components/calculator.py:99
+msgid "Invalid expression"
+msgstr "Invalid expression"
+
+#: src/ptr42/math_language/lexer/lexer.py:97
+#, python-format
+msgid "Invalid identifier on position %d"
+msgstr "Invalid identifier on position %d"
+
+#: src/ptr42/math_language/lexer/lexer.py:105
+msgid "Invalid comma"
+msgstr "Invalid comma"
+
+#: src/ptr42/math_language/lexer/lexer.py:129
+#: src/ptr42/math_language/lexer/lexer.py:142
+#: src/ptr42/math_language/parser/parser.py:98
+msgid "Mismatched parenthesis"
+msgstr "Mismatched parenthesis"
+
+#: src/ptr42/math_language/lexer/lexer.py:136
+#, python-format
+msgid "Unknown character '%c'"
+msgstr "Unknown character '%c'"
+
+#: src/ptr42/math_language/lexer/lexer.py:155
+msgid "Number already has decimal point"
+msgstr "Number already has decimal point"
+
+#: src/ptr42/math_language/lexer/lexer.py:177
+#, python-format
+msgid "Variable '%s' does not exist!"
+msgstr "Variable '%s' does not exist!"
+
+#: src/ptr42/math_language/lexer/lexer.py:183
+#, python-format
+msgid "Function '%s' does not exist!"
+msgstr "Function '%s' does not exist!"
+
+#: src/ptr42/math_language/lexer/lexer.py:199
+#, python-format
+msgid "Function '%s' is not correctly parenthesised"
+msgstr "Function '%s' is not correctly parenthesised"
+
+#: src/ptr42/math_language/parser/parser.py:72
+#, python-format
+msgid "Unary operator %s does not exist"
+msgstr "Unary operator %s does not exist"
+
+#: src/ptr42/math_language/parser/parser.py:77
+#, python-format
+msgid "Duplicate operator %s"
+msgstr "Duplicate operator %s"
+
+#: src/ptr42/math_language/parser/parser.py:84
+msgid "Invalid factor"
+msgstr "Invalid factor"

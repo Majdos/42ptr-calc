@@ -85,7 +85,7 @@ class Calculator(QtWidgets.QWidget):
                 tokens = list(lexer.generate_tokens())
 
                 if not tokens:
-                    self._screen.setText(_("Zadajte vyraz"))
+                    self._screen.setText(_("Enter expression"))
                     return
 
                 parser = MathParser(tokens, lexer.get_operators())
@@ -96,7 +96,7 @@ class Calculator(QtWidgets.QWidget):
             except ValueError as e:
                 self._mark_error(str(e))
             except ParserError:
-                self._mark_error(_("Chyba vyrazu"))
+                self._mark_error(_("Invalid expression"))
 
         elif action == Action.DECIMAL:
             self._screen.insertText(".")

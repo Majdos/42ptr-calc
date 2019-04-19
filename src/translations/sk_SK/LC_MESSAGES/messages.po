@@ -1,0 +1,117 @@
+# Slovak (Slovakia) translations for PROJECT.
+# Copyright (C) 2019 42ptr
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-04-19 23:43+0200\n"
+"PO-Revision-Date: 2019-04-19 23:39+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sk_SK\n"
+"Language-Team: sk_SK <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: src/ptr42/math42.py:61
+msgid "Division of 0 is undefined"
+msgstr "Delenie nulou je nedefinované"
+
+#: src/ptr42/math42.py:77
+msgid "Factorial: value must be positive integral value or zero"
+msgstr "Faktorial: hodnota musí byť celé číslo a väčšie alebo rovné nule"
+
+#: src/ptr42/math42.py:111
+msgid "ln: argument must be greater than 0"
+msgstr "ln: argument musí byť väčší ako nula"
+
+#: src/ptr42/math42.py:125
+msgid "sqrt: argument must be greater or equal zero"
+msgstr "sqrt: argument musí byť väčší alebo rovný nule"
+
+#: src/ptr42/math42.py:139
+msgid "root: first argument must be greater or equal zero"
+msgstr "root: prvý argument musí byť väčší alebo rovný nule"
+
+#: src/ptr42/math42.py:142
+msgid "root: second argument must be greater than zero"
+msgstr "root: druhý argument musí byť väčší ako nula"
+
+#: src/ptr42/math42.py:161
+msgid "Number must be in binary format"
+msgstr "Číslo musú byť v binárnom formáte"
+
+#: src/ptr42/math42.py:178
+msgid "Number must be in hexadecimal format"
+msgstr "Číslo musú byť v hexadecimálnom formáte"
+
+#: src/ptr42/math42.py:195
+msgid "Number must be in octal format"
+msgstr "Číslo musú byť v oktálovom formáte"
+
+#: src/ptr42/components/calculator.py:88
+msgid "Enter expression"
+msgstr "Zadajte výraz"
+
+#: src/ptr42/components/calculator.py:99
+msgid "Invalid expression"
+msgstr "Neplatný výraz"
+
+#: src/ptr42/math_language/lexer/lexer.py:97
+#, python-format
+msgid "Invalid identifier on position %d"
+msgstr "Neplatný identifikátor na pozícii %d"
+
+#: src/ptr42/math_language/lexer/lexer.py:105
+msgid "Invalid comma"
+msgstr "Nesprávne umiestnená čiarka"
+
+#: src/ptr42/math_language/lexer/lexer.py:129
+#: src/ptr42/math_language/lexer/lexer.py:142
+#: src/ptr42/math_language/parser/parser.py:98
+msgid "Mismatched parenthesis"
+msgstr "Nesprávne uzátvorkovanie"
+
+#: src/ptr42/math_language/lexer/lexer.py:136
+#, python-format
+msgid "Unknown character '%c'"
+msgstr "Neznámy znak '%c'"
+
+#: src/ptr42/math_language/lexer/lexer.py:155
+msgid "Number already has decimal point"
+msgstr "Číslo nesmie obsahovať viacej ako jednu desatinnú čiarku"
+
+#: src/ptr42/math_language/lexer/lexer.py:177
+#, python-format
+msgid "Variable '%s' does not exist!"
+msgstr "Premenná '%s' neexistuje!"
+
+#: src/ptr42/math_language/lexer/lexer.py:183
+#, python-format
+msgid "Function '%s' does not exist!"
+msgstr "Funkcia '%s' neexistuje!"
+
+#: src/ptr42/math_language/lexer/lexer.py:199
+#, python-format
+msgid "Function '%s' is not correctly parenthesised"
+msgstr "Funkcia '%s' nie je správne uzátvorkovaná"
+
+#: src/ptr42/math_language/parser/parser.py:72
+#, python-format
+msgid "Unary operator %s does not exist"
+msgstr "Unárny operátor %s neexistuje"
+
+#: src/ptr42/math_language/parser/parser.py:77
+#, python-format
+msgid "Duplicate operator %s"
+msgstr "Nesprávna sekvencia operátorov %s"
+
+#: src/ptr42/math_language/parser/parser.py:84
+msgid "Invalid factor"
+msgstr "Nesprávny výraz"
+
