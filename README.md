@@ -36,6 +36,7 @@ Presnejšie inštrukcie ako nainštalovať prostredie sú dostupné v [dokument�
 ## Cieľové platformy
 
 Ubuntu 64bit
+Windows 64bit
 
 ## Autori
 
