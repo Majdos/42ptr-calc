@@ -6,10 +6,13 @@ DOCS_LOCATION=.
 TESTS_DIRECTORY_NAME=tests
 TESTS_LOCATION=.
 
-.PHONY: all pack clean test all-tests doc run install profile
+I18N_DIRECTORY=./src/translations
+I18N_DOMAIN=messages
+
+.PHONY: all pack clean test all-tests doc run install profile i18n_extract i18n_init i18n_update i18n_compile
 
 # all (přeloží projekt - včetně programu pro profiling)
-all: install doc profile
+all: install i18n_compile doc profile
 
 pack:
 	# todo: zabalí projekt tak, aby mohl být odevzdán
@@ -23,11 +26,22 @@ test:
 all-tests:
 	python -m unittest discover -s $(TESTS_DIRECTORY_NAME) -v -p '*_test.py'
 
+i18n_extract:
+	pybabel extract -w 80 --copyright-holder 42ptr -o $(I18N_DIRECTORY)/$(I18N_DOMAIN).pot src
+
+i18n_init:
+	pybabel init --domain $(I18N_DOMAIN) -i $(I18N_DIRECTORY)/$(I18N_DOMAIN).pot -d $(I18N_DIRECTORY)/ -l $(LANG)
+
+i18n_update:
+	pybabel update --domain $(I18N_DOMAIN) -i $(I18N_DIRECTORY)/$(I18N_DOMAIN).pot -d $(I18N_DIRECTORY)/ -l $(LANG)
+
+i18n_compile:
+	pybabel compile -f -d $(I18N_DIRECTORY)
+
 doc:
 	cd $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME) && make html
 
 run: install
-	# spusti aplikaciu
 	./$(PYTHON_MAIN_FILE)
 
 install:

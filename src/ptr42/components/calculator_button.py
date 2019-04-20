@@ -1,6 +1,7 @@
 from enum import Enum
 
 from PySide2 import QtWidgets, QtGui
+from PySide2.QtGui import QPalette
 
 from ptr42.math_language.parser.expression import Function, Operator, Constant
 
@@ -53,6 +54,8 @@ class CalculatorConstantButton(CalculatorButton):
         super().__init__(name, name)
         self.handler = handler
         self.constant = constant
+        self.setBackgroundRole(QPalette.ButtonText)
+        self.setProperty("primary", "True")
 
     def on_click(self):
         self.handler(self.name, self.constant)
