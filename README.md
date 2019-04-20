@@ -9,8 +9,8 @@ a taktiež príručným manuálom pre uľahčenie použiteľnosti
 
 ### O projekte
 
-Projekt je zameraný na skúšku práci v tíme, využívaniu efektívnych  
-a moderných technológií pre vzdialenú prácu pre tímové projekty  
+Projekt je zameraný na skúšku práce v tíme a využívaniu efektívnych  
+a moderných technológií pre vzdialenú prácu v tímových projektoch  
 (napr.: GitHub - internetová služba poskytujúca bezplatný webhosting pre open src projekty).
 
 ### O kalkulačke
@@ -18,7 +18,7 @@ a moderných technológií pre vzdialenú prácu pre tímové projekty
 Program kalkulačky je písaný v jazyku ``Python`` a GUI je riešené pomocou ``PyQt``.  
 Kalkulačka v sebe obsahuje sadu základných operácií (+,-,*,/,!,ln,sqrt,root,...).  
 Taktiež pomocou kalkulačky je možné premeniť čísla z binárnej,hexadecimálnej a oktálovej  
-sústavy na desiatkovú.  
+sústavy na desiatkovú (pre zjednodušenie počtov).  
 Výzor kalkulačky sme nechali na preferencie užívateľa, to znamená, že sa prispôsobí téme,  
 ktorú má užívateľ nastavenú vo svojom systéme.
 
@@ -29,7 +29,7 @@ Prvý krok je naklonovanie repozitára do vášho zariadenia, pre túto akciu st
 ```git clone https://github.com/Majdos/42ptr-calc.git```
 
 ### Inštalácia zo zdrojového kódu
-Najprv sa musíte premiestniť do priečinka, ktorý ste naklonovali v predošlom kroku.  
+Najprv sa musíte premiestniť do priečinka, ktorý ste si naklonovali v predošlom kroku.  
 //TODO základný postup inštalácie  
 Presnejšie inštrukcie ako nainštalovať prostredie sú dostupné v [dokumentácii](https://github.com/Majdos/42ptr-calc/blob/master/doc/source/instalacia.md)
 
