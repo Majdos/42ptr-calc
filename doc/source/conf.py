@@ -49,6 +49,9 @@ extensions = [
     'recommonmark'
 ]
 
+add_module_names = False
+autodoc_mock_imports = ["PySide2"]
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 

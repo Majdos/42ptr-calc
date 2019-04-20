@@ -1,4 +1,3 @@
-from enum import Enum
 from string import ascii_letters
 
 from PySide2 import QtWidgets
@@ -13,12 +12,11 @@ from ptr42.math_language.parser.parser import MathParser
 from ptr42.math_language.parser.parser_error import ParserError
 
 
-class CalculatorState(Enum):
-    IN_FUNCTION = 1
-    BUILDING_NUMBER = 2
-
-
 class Calculator(QtWidgets.QWidget):
+    """
+
+    """
+
     def __init__(self):
         super().__init__()
         self._keyboard = None
@@ -33,19 +31,37 @@ class Calculator(QtWidgets.QWidget):
 
         self._layout.addWidget(self._error_label)
 
-    def new_keyboard_template(self):
+    def new_keyboard_template(self) -> CalculatorKeyboard:
+        """
+        Funkcia urcena na vytvaranie novej klavesnice, ktora bude pripojena ku
+        tejto kalkulacke
+
+        :return: klavesnicu bez klaves s napojenymi signalmi na kalkulacku
+        """
+
         keyboard = CalculatorKeyboard()
         keyboard.set_handlers(self._on_function_input, self._on_operator_input, self._on_constant_input,
                               self._on_action_input)
         return keyboard
 
-    def set_keyboard(self, keyboard: CalculatorKeyboard):
+    def set_keyboard(self, keyboard: CalculatorKeyboard) -> None:
+        """
+        Nastavi klavesnicu ku tejto kalkulacke
+
+        :param keyboard:
+        :return:
+        """
+
         self._keyboard = keyboard
         self._layout.setStretchFactor(keyboard, 5)
         self._layout.addWidget(keyboard)
         self.setLayout(self._layout)
 
     def has_selected_text(self):
+        """
+
+        :return: true, ak je na obrazovke oznaceny text
+        """
         return self._screen.hasSelectedText()
 
     def _mark_error(self, error_msg: str):
