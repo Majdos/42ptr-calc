@@ -1,3 +1,4 @@
+LANGUAGE ?= sk_SK
 PYTHON_MAIN_FILE=main.py
 
 DOCS_DIRECTORY_NAME=doc
@@ -33,10 +34,10 @@ i18n_extract:
 	pybabel extract -w 80 --copyright-holder 42ptr -o $(I18N_DIRECTORY)/$(I18N_DOMAIN).pot src
 
 i18n_init:
-	pybabel init --domain $(I18N_DOMAIN) -i $(I18N_DIRECTORY)/$(I18N_DOMAIN).pot -d $(I18N_DIRECTORY)/ -l $(LANG)
+	pybabel init --domain $(I18N_DOMAIN) -i $(I18N_DIRECTORY)/$(I18N_DOMAIN).pot -d $(I18N_DIRECTORY)/ -l $(LANGUAGE)
 
 i18n_update:
-	pybabel update --domain $(I18N_DOMAIN) -i $(I18N_DIRECTORY)/$(I18N_DOMAIN).pot -d $(I18N_DIRECTORY)/ -l $(LANG)
+	pybabel update --domain $(I18N_DOMAIN) -i $(I18N_DIRECTORY)/$(I18N_DOMAIN).pot -d $(I18N_DIRECTORY)/ -l $(LANGUAGE)
 
 i18n_compile:
 	pybabel compile -f -d $(I18N_DIRECTORY)
@@ -46,7 +47,7 @@ doc:
 	sphinx-apidoc -o $(DOC_API_LOCATION) -M --implicit-namespaces \
 		--ext-autodoc --ext-githubpages $(SRC)
 
-	cd $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME) && make html
+	cd $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/source && sphinx-build -b html -D language=$(LANGUAGE) . ../build/html/$(LANGUAGE)
 
 run: install
 	./$(PYTHON_MAIN_FILE)

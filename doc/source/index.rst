@@ -25,6 +25,5 @@ kontaktovať prostredníctvom `issues na githube`_. Každú spätnú väzbu si v
     :caption: Obsah:
 
     install.md
-    math.rst
     i18n.rst
     modules/modules.rst

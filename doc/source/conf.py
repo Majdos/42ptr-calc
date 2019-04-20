@@ -14,6 +14,7 @@
 #
 import os
 import sys
+
 sys.path.insert(0, os.path.abspath('../../src'))
 
 # -- Project information -----------------------------------------------------
@@ -27,7 +28,6 @@ author = 'Marián Lorinc, Lukáš Javorský, Patrik Ondriga, Peter Vinarčík'
 version = '1.0'
 # The full version, including alpha/beta/rc tags
 release = '1.0.0'
-
 
 # -- General configuration ---------------------------------------------------
 
@@ -74,6 +74,10 @@ master_doc = 'index'
 # Usually you set "translations" from the command line for these cases.
 language = None
 
+locale_dirs = ['locale/']  # path is example but recommended.
+gettext_compact = False  # optional.
+gettext_uuid = True
+
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
@@ -81,7 +85,6 @@ exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
-
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -117,7 +120,6 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = '42ptrcalcdoc'
 
-
 # -- Options for LaTeX output ------------------------------------------------
 
 latex_elements = {
@@ -147,7 +149,6 @@ latex_documents = [
      'manual'),
 ]
 
-
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
@@ -156,7 +157,6 @@ man_pages = [
     (master_doc, '42ptrcalc', '42ptr calc Dokumentácia',
      [author], 1)
 ]
-
 
 # -- Options for Texinfo output ----------------------------------------------
 
@@ -168,7 +168,6 @@ texinfo_documents = [
      author, '42ptrcalc', 'Prispôsobivá kalkulačka.',
      'Miscellaneous'),
 ]
-
 
 # -- Options for Epub output -------------------------------------------------
 
@@ -186,7 +185,6 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
 
 # -- Extension configuration -------------------------------------------------
 
@@ -206,4 +204,12 @@ html_theme_options = {
     'navigation_depth': 4,
     'includehidden': True,
     'titles_only': False
+}
+
+html_context = {
+    "display_github": True,  # Integrate GitHub
+    "github_user": "Majdos",  # Username
+    "github_repo": "42ptr-calc",  # Repo name
+    "github_version": "master",  # Version
+    "conf_py_path": "/doc/source/",  # Path in the checkout to the docs root
 }

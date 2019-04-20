@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Marián Lorinc, Lukáš Javorský, Patrik Ondriga, Peter
+# Vinarčík
+# This file is distributed under the same license as the 42ptr calc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 42ptr calc 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-20 16:03+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/i18n.md:1
+msgid "Internacionalizácia - i18n"
+msgstr ""
+
+#: ../../source/i18n.md:3
+msgid ""
+"Internacionálna aplikácia je taká aplikácia, ktorá vie prispôsobiť jazyk "
+"svojho rozhrania podľa materinského jazyka používateľa. Tento projekt na "
+"preklad využíva gettext zo štandardnej knižnice pythonu a pybabel."
+msgstr ""
+
+#: ../../source/i18n.md:7
+msgid "Začíname"
+msgstr ""
+
+#: ../../source/i18n.md:9
+msgid ""
+"Na preklad nepotrebujeme nainštalovať žiadne závislosti. Knižnica gettext"
+" je v štandardnej knižnici a pybabel je závislosť sphinxu, ktorý už máme "
+"nainštalovaný."
+msgstr ""
+
+#: ../../source/i18n.md:14
+msgid "Generovanie šablóny pre preklad"
+msgstr ""
+
+#: ../../source/i18n.md:16
+msgid ""
+"Šablónu pre preklad vygenerujeme pomocou príkzu make i18n_extract. Príkaz"
+" vytvorí súbor src/translations/messages.pot, ktorý ďalej neupravujeme."
+msgstr ""
+
+#: ../../source/i18n.md:19
+msgid "Vytvorenie prekladu zo šablóny"
+msgstr ""
+
+#: ../../source/i18n.md:21
+msgid ""
+"Aby sme mohli vytvoriť preklad, ktorý ešte neexistuje, použijeme príkaz "
+"make LANG=kod_krajiny i18n_init, kde LANG je v tvare jazyk_krajina. Jazyk"
+" tvorí dva malé písmena podľa ISO 639 a krajina tvorí dva veľke písmená "
+"podľa ISO 3166."
+msgstr ""
+
+#: ../../source/i18n.md:25
+msgid "Napríklad pre Slovensko by sme použili kód sk_SK."
+msgstr ""
+
+#: ../../source/i18n.md:27
+msgid "Aktualizovanie prekladu pri zmene šablóny"
+msgstr ""
+
+#: ../../source/i18n.md:29
+msgid ""
+"Ku zmene šablóny dochádza, keď pridáme do zdrojového kódu nový prekladový"
+" string, ktorý sa zapisuje v pythone následovne:"
+msgstr ""
+
+#: ../../source/i18n.md:32
+msgid "_(\"Hello\")"
+msgstr ""
+
+#: ../../source/i18n.md:34
+msgid ""
+"make i18n_extract by v tomto prípade pridal do šáblony nový preklad "
+"Hello, ktorý musíme definovať. Keby sme opäť použili make "
+"LANG=kod_krajiny i18n_init, zmazali by sme si naše pôvodne preklady, čo "
+"nechceme. Aby sme zamedzili zmazaniu už existujúcich prekladov použijeme "
+"make LANG=kod_krajiny i18n_update."
+msgstr ""
+
+#: ../../source/i18n.md:38
+msgid "Nasadenie prekladov do programu"
+msgstr ""
+
+#: ../../source/i18n.md:40
+msgid ""
+"Nakoniec sme došli ku najjednoduchšej časti prekladu aplikácie. Aby sa "
+"náš preklad používal v aplikácii, stačí skompilovať všetky preklady "
+"pomocou príkazu make i18n_compile."
+msgstr ""
+
+#: ../../source/i18n.md:43
+msgid "Pridávanie nových prekladových reťazcov v zdrojových súboroch"
+msgstr ""
+
+#: ../../source/i18n.md:45
+msgid ""
+"Vytváranie nových prekladateľných reťazcov je pomerne jednoduché. gettext"
+" globálne zaregistroval funkciu _() , ktorá preloží reťazec vo vnútri."
+msgstr ""
+
+#: ../../source/i18n.md:48
+msgid "Príklad č. 1"
+msgstr ""
+
+#: ../../source/i18n.md:50
+msgid ""
+"Povedzme, že chceme spraviť program, ktorý privíta užívateľa v jeho "
+"rodnom jazyku. Kód v pythone bude vyzerať následovne:"
+msgstr ""
+
+#: ../../source/i18n.md:53
+msgid "print(_(\"Hello\"))"
+msgstr ""
+
+#: ../../source/i18n.md:55
+msgid ""
+"Po prevedení inštrukcií, ktoré boli uvedené vyššie, ako sú vygenerovanie "
+"všeobecnej šablóny, vygenerovanie konkrétneho prekladu pre jazyk a "
+"kompilácia, by náš program bol schopný uvítat používateľa v jazykoch, "
+"ktoré sme sami preložili."
+msgstr ""
+
+#: ../../source/i18n.md:61
+msgid "Príklad č. 2"
+msgstr ""
+
+#: ../../source/i18n.md:63
+msgid ""
+"Príklad č. 2 naväzuje na predchádajúci príklad, ale tentokrát privítame "
+"užívate a vypíšeme jeho meno."
+msgstr ""
+
+#: ../../source/i18n.md:65
+msgid "print(_(f\"Hello {name}\"))"
+msgstr ""
+
+#: ../../source/i18n.md:67
+msgid ""
+"Bohužiaľ tento spôsob prekladania nefunguje, a preto musíme použiť "
+"staršiu formu formátovanie"
+msgstr ""
+
+#: ../../source/i18n.md:69
+#, python-format
+msgid "print(_(\"Hello %s\") % name)"
+msgstr ""
+

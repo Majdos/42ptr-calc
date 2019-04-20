@@ -1,0 +1,311 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Marián Lorinc, Lukáš Javorský, Patrik Ondriga, Peter
+# Vinarčík
+# This file is distributed under the same license as the 42ptr calc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 42ptr calc 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-20 16:03+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/modules/ptr42.components.rst:2
+msgid "ptr42.components package"
+msgstr ""
+
+#: ../../source/modules/ptr42.components.rst:10
+msgid "Subpackages"
+msgstr ""
+
+#: ../../source/modules/ptr42.components.rst:17
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/modules/ptr42.components.rst:20
+msgid "ptr42.components.calculator module"
+msgstr ""
+
+#: of ptr42.components.calculator.Calculator:1
+#: ptr42.components.calculator_button.CalculatorButton:1
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard:1
+#: ptr42.components.screen.CalculatorScreen:1
+msgid "Bases: :class:`sphinx.ext.autodoc.importer._MockObject`"
+msgstr ""
+
+#: of ptr42.components.calculator.Calculator.has_selected_text
+#: ptr42.components.calculator.Calculator.new_keyboard_template
+#: ptr42.components.calculator.Calculator.set_keyboard
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.get_layout
+#: ptr42.components.screen.CalculatorScreen.getCursorPositions
+#: ptr42.components.screen.CalculatorScreen.insertText
+msgid "Returns"
+msgstr ""
+
+#: of ptr42.components.calculator.Calculator.has_selected_text:1
+msgid "true, ak je na obrazovke oznaceny text"
+msgstr ""
+
+#: of ptr42.components.calculator.Calculator.new_keyboard_template:1
+msgid ""
+"Funkcia urcena na vytvaranie novej klavesnice, ktora bude pripojena ku "
+"tejto kalkulacke"
+msgstr ""
+
+#: of ptr42.components.calculator.Calculator.new_keyboard_template:4
+msgid "klavesnicu bez klaves s napojenymi signalmi na kalkulacku"
+msgstr ""
+
+#: of ptr42.components.calculator.Calculator.set_keyboard:1
+msgid "Nastavi klavesnicu ku tejto kalkulacke"
+msgstr ""
+
+#: of ptr42.components.calculator.Calculator.set_keyboard
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_action
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_constant
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_function
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_hidden_action
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_hidden_action_with_inverse
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_operator
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.set_handlers
+#: ptr42.components.screen.CalculatorScreen.insertText
+#: ptr42.components.screen.CalculatorScreen.setSelection
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/modules/ptr42.components.rst:28
+msgid "ptr42.components.calculator\\_button module"
+msgstr ""
+
+#: of ptr42.components.calculator_button.Action:1
+msgid "Bases: :class:`enum.Enum`"
+msgstr ""
+
+#: of ptr42.components.calculator_button.Action:1
+msgid "Akciove tlacitka, ktore podporuje kalkulacka"
+msgstr ""
+
+#: of ptr42.components.calculator_button.CalculatorActionButton:1
+#: ptr42.components.calculator_button.CalculatorConstantButton:1
+#: ptr42.components.calculator_button.CalculatorFunctionButton:1
+#: ptr42.components.calculator_button.CalculatorOperatorButton:1
+msgid "Bases: :class:`ptr42.components.calculator_button.CalculatorButton`"
+msgstr ""
+
+#: of ptr42.components.calculator_button.CalculatorActionButton:1
+msgid "Tlacitko reprezentujuce akciu v kalkulacke"
+msgstr ""
+
+#: of ptr42.components.calculator_button.CalculatorActionButton.on_click:1
+#: ptr42.components.calculator_button.CalculatorButton.on_click:1
+#: ptr42.components.calculator_button.CalculatorConstantButton.on_click:1
+#: ptr42.components.calculator_button.CalculatorFunctionButton.on_click:1
+#: ptr42.components.calculator_button.CalculatorOperatorButton.on_click:1
+msgid "Abstraktna metoda, ktora sa vola pri kliknuti a stlaceni klavesy"
+msgstr ""
+
+#: of ptr42.components.calculator_button.CalculatorActionButton.on_click
+#: ptr42.components.calculator_button.CalculatorButton.on_click
+#: ptr42.components.calculator_button.CalculatorConstantButton.on_click
+#: ptr42.components.calculator_button.CalculatorFunctionButton.on_click
+#: ptr42.components.calculator_button.CalculatorOperatorButton.on_click
+msgid "Raises"
+msgstr ""
+
+#: of ptr42.components.calculator_button.CalculatorActionButton.on_click:3
+#: ptr42.components.calculator_button.CalculatorButton.on_click:3
+#: ptr42.components.calculator_button.CalculatorConstantButton.on_click:3
+#: ptr42.components.calculator_button.CalculatorFunctionButton.on_click:3
+#: ptr42.components.calculator_button.CalculatorOperatorButton.on_click:3
+msgid "abstraktna metoda, musi byt prepisana"
+msgstr ""
+
+#: of ptr42.components.calculator_button.CalculatorButton:1
+msgid "Qt tlacitko reprezentujuce tlacitko v kalkulacke"
+msgstr ""
+
+#: of ptr42.components.calculator_button.CalculatorConstantButton:1
+msgid "Tlacitko reprezentujuce konstantu v kalkulacke"
+msgstr ""
+
+#: of ptr42.components.calculator_button.CalculatorFunctionButton:1
+msgid "Tlacitko reprezentujuce funkcie v kalkulacke"
+msgstr ""
+
+#: of ptr42.components.calculator_button.CalculatorOperatorButton:1
+msgid "Tlacitko reprezentujuce operator v kalkulacke"
+msgstr ""
+
+#: ../../source/modules/ptr42.components.rst:36
+msgid "ptr42.components.calculator\\_keyboard module"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard:1
+msgid "Trieda reprezentujuca klavesnicu kalkulacky"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.get_layout:1
+msgid "Vrati layout klavesnice"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.get_layout:3
+msgid "layout klavesnice"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.register_action:1
+msgid "Zaregistruje akciu do kalkulacky a prida tlacitko do kalkulacky"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.register_action:3
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_constant:3
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_function:3
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_operator:3
+msgid "text tlacitka"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.register_action:4
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_constant:4
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_function:4
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_operator:4
+msgid "funkcia pre tlacitko"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.register_action:5
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_constant:5
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_function:5
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_operator:5
+msgid "riadok, kde bude umiestene tlacitko"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.register_action:6
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_constant:6
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_function:6
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_operator:6
+msgid "stlpec, kde bude umiestene tlacitko"
+msgstr ""
+
+#: of
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_constant:1
+msgid "Zaregistruje konstantu do kalkulacky a prida tlacitko do kalkulacky"
+msgstr ""
+
+#: of
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_function:1
+msgid "Zaregistruje funkciu do kalkulacky a prida tlacitko do kalkulacky"
+msgstr ""
+
+#: of
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_hidden_action:1
+msgid "Zaregistruje skrytu akciu do kalkulacky a neprida tlacitko do kalkulacky"
+msgstr ""
+
+#: of
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_hidden_action:3
+msgid "klavesova skratka akcie"
+msgstr ""
+
+#: of
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_hidden_action:4
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_hidden_action_with_inverse:4
+msgid "akcia"
+msgstr ""
+
+#: of
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_hidden_action_with_inverse:1
+msgid ""
+"Zaregistruje skrytu akciu do kalkulacky s inverziou a neprida tlacitko do"
+" kalkulacky"
+msgstr ""
+
+#: of
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_hidden_action_with_inverse:3
+msgid "klavesova skratka akcie (inverzna akcia sa vykona po drzani shiftu)"
+msgstr ""
+
+#: of
+#: ptr42.components.calculator_keyboard.CalculatorKeyboard.register_operator:1
+msgid "Zaregistruje operator do kalkulacky a prida tlacitko do kalkulacky"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.set_handlers:1
+msgid "Nastavi ovladac klavesovych udalosti"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.set_handlers:3
+msgid "funkcia, ktora sa zavola, ked dojde ku kliku na funkciu"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.set_handlers:4
+msgid "funkcia, ktora sa zavola, ked dojde ku kliku na operator"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.set_handlers:5
+msgid "funkcia, ktora sa zavola, ked dojde ku kliku na konstantu"
+msgstr ""
+
+#: of ptr42.components.calculator_keyboard.CalculatorKeyboard.set_handlers:6
+msgid "funkcia, ktora sa zavola, ked dojde ku kliku na akciu"
+msgstr ""
+
+#: ../../source/modules/ptr42.components.rst:44
+msgid "ptr42.components.screen module"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen:1
+msgid "Trieda reprezentujuca displej kalkulacky"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen.deselect:1
+msgid "Odznaci text"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen.getCursorPositions:1
+msgid "Vrati poziciu kurzoru v tvare (start, end)"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen.getCursorPositions:3
+msgid "tuple so strukturou (start, end), co reprezentuje poziciu kurzoru"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen.insertText:1
+msgid ""
+"Vlozi text na poziciu aktualneho kurzoru, alebo ak je oznaceny text, tak "
+"ho nahradi"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen.insertText:4
+msgid "text na vlozenie"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen.insertText:5
+msgid "poziciu zaciatku textu na displeji"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen.markError:1
+msgid "Oznaci chybny stav kalkulacky"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen.setSelection:1
+msgid "Oznaci text v zadanom rozmadzi"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen.setSelection:3
+msgid "pociatocny index"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen.setSelection:4
+msgid "pocet znakov na oznacenie"
+msgstr ""
+
+#: of ptr42.components.screen.CalculatorScreen.unmarkError:1
+msgid "Zrusi chybny stav kalkulacky"
+msgstr ""
+
