@@ -33,3 +33,12 @@ class PriorityOperations(unittest.TestCase):
         self.assertEqual(calculator("fact(abs(-3))"), "6")
         self.assertEqual(calculator("ln(exp(42))"), "42")
         self.assertEqual(calculator("root(sqrt(4),abs(-3))"), "8")
+
+    def test_incorrect_input(self):
+        self.assertRaises(ValueError, calculator, "++42")
+        self.assertRaises(ValueError, calculator, "-42-")
+        self.assertRaises(ValueError, calculator, "fact(-)")
+        self.assertRaises(ValueError, calculator, "5+5)*4")
+        self.assertRaises(ValueError, calculator, "devet")
+        self.assertRaises(ValueError, calculator, "5.5.6")
+        self.assertRaises(ValueError, calculator, "foo(5)")
