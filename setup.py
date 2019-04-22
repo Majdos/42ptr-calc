@@ -6,7 +6,7 @@
 
 import os
 
-from setuptools import setup, find_packages, find_namespace_packages
+from setuptools import setup, find_packages
 
 # Meta information
 version = open('VERSION').read().strip()

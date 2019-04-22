@@ -211,5 +211,5 @@ html_context = {
     "github_user": "Majdos",  # Username
     "github_repo": "42ptr-calc",  # Repo name
     "github_version": "master",  # Version
-    "conf_py_path": "/doc/source/",  # Path in the checkout to the docs root
+    "conf_py_path": "/docs/source/",  # Path in the checkout to the docs root
 }
