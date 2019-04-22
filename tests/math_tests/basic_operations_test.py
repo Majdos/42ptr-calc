@@ -38,7 +38,7 @@ class AdvancedOperations(unittest.TestCase):
         self.assertEqual(math.absolute_number(0), 0)
         self.assertEqual(math.absolute_number(9), 9)
 
-    def test_naturalExponent(self):
+    def test_natural_exponent(self):
         self.assertEqual(math.natural_exponent(0), 1)
         self.assertAlmostEqual(math.natural_exponent(6), 403.428793493)
 

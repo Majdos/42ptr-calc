@@ -196,7 +196,8 @@ class MathLexer(object):
             self._next()
 
         if self._current_char is None and stack:
-            raise ExpressionError(_("Function '%s' is not correctly parenthesised") % self._current_identifier)
+            raise ExpressionError(_("Function '%s' is not correctly parenthesised")
+                                  % self._current_identifier)
 
         end = self._pos - 1
 
@@ -204,6 +205,6 @@ class MathLexer(object):
             args_tokens = self._tokenize_sub_text(start, end, in_function=True)
 
         function = deepcopy(self._functions[self._current_identifier])
-        self._next()
+
         self._current_identifier = None
         return FunctionToken(function, args_tokens)
