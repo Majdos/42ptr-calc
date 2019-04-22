@@ -1,6 +1,5 @@
 import unittest
-
-import src.ptr42.math42 as math
+import ptr42.math42 as math
 
 
 class BasicOperations(unittest.TestCase):

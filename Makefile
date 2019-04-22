@@ -11,11 +11,20 @@ TESTS_LOCATION=.
 I18N_DIRECTORY=./src/translations
 I18N_DOMAIN=messages
 
-SRC=./src/ptr42
+DEBIAN_MAINTAINER=Marian Lorinc
+DEBIAN_MAINTAINER_EMAIL=xlorin01@vutbr.cz
+DEBIAN_PACKAGER_DIR=dist
+
+DH_MAKE_FLAGS=-c gpl3 -e $(DEBIAN_MAINTAINER_EMAIL) -n -y -s
+
+PROGRAM_VERSION=1.0.0
+PROGRAM_NAME=calc42
+
+
+SRC=./src
 
 .PHONY: all pack clean test all-tests doc run install profile i18n_extract i18n_init i18n_update i18n_compile
 
-# all (přeloží projekt - včetně programu pro profiling)
 all: install i18n_compile doc profile
 
 pack:
@@ -27,7 +36,7 @@ clean:
 test:
 	python -m unittest discover -s $(TESTS_DIRECTORY_NAME).math_tests -v -p '*_test.py'
 
-all-tests:
+all_tests:
 	python -m unittest discover -s $(TESTS_DIRECTORY_NAME) -v -p '*_test.py'
 
 i18n_extract:
@@ -48,6 +57,10 @@ doc:
 		--ext-autodoc --ext-githubpages $(SRC)
 
 	cd $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/source && sphinx-build -b html -D language=$(LANGUAGE) . ../build/html/$(LANGUAGE)
+
+init_debpkg:
+	cd $(DEBIAN_PACKAGER_DIR) && tar xzvf $(PROGRAM_NAME)-$(PROGRAM_VERSION).tar.gz
+	cd $(DEBIAN_PACKAGER_DIR)/$(PROGRAM_NAME)-$(PROGRAM_VERSION) && USER=majo dh_make $(DH_MAKE_FLAGS) && cp packager/install debian
 
 run: install
 	./$(PYTHON_MAIN_FILE)
