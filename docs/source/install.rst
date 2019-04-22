@@ -9,7 +9,7 @@ Ak chcete používať len kalkulačku, prosím, nainštalujte si kalkulačku pom
 inštalátora, ktorý je dostupný na `našom githube`_.
 
 .. warning::
-    Tento návod požaduje minimálnu verziu pythonu 3.6
+    Tento návod vyžaduje minimálnu verziu pythonu 3
 
 Začíname
 ========
@@ -17,44 +17,34 @@ Začíname
 Naším cieľom je nainštalovať závislosti, bez toho aby kolidovali s ostatnými
 verziami už nainštalovaných závislostí.
 
-Najprv než začneme, musíme vytvoriť pythonove virtuálne prostredie. To nám
-zaistí, že nedôjde ku kolíziam verzií globálnych závislostí.
+Tento projekt využíva na správu závislostí nástroje ako setuptools a pipenv, ktoré si
+teraz nainštalujeme.
 
-Vytvorenie virtualneho prostredia
+Inštalácia potrebných nástrojov
 ---------------------------------
 
-Virtuálne prostredie vytvoríme pomocou pythonom príkazom.
+Najprv si nainštalujeme **pipenv** a **setuptools**.
 
-``python -m venv venv``
+``pip install --user pipenv``
 
-Po spustení príkazu sa nám vytvorí virtuálne prostredie s menom *venv*.
+``pip install --user setuptools``
 
-Aktivácia virtuálneho prostredia
------------------------------------------------
 
-Aktivácia prostredia *venv* záleži na platforme, na ktorej pracujeme.
-
-Windows platforma
-^^^^^^^^^^^^^^^^^
-
-``.\venv\Scripts\activate``
-
-Linux platforma
-^^^^^^^^^^^^^^^
-
-``source venv/bin/activate``
-
-Instalacia zavislosti
+Inštalácia závislosti
 ---------------------
 
-Po aktivácii môžeme nainštalovať závislosti.
+Na inštaláciu projektových závislosti už je predpripravený script v makefili.
+Stačí jednoducho spustiť ``make install``.
 
-``make install``
+Prvé spustenie programu
+-----------------------
 
-Deaktívacia prostredia
-----------------------
+Predtým než začneme pracovať s programom, musíme skompilovať viacjazyčné preklady pomocou
+príkazu:
 
-Nakoniec, keď sme skončili s prácou na projekte, alebo chceme sa prepnúť do
-iného prostredia, môžeme deaktivovať aktuálne prostredie pomocou príkazu.
+``make i18_compile``
 
-``deactivate``
+.. note::
+    Túto procedúru je nutné vykonať pri každej zmene prekladu
+
+Akonáhle sa dokončí kompilácia, môžeme spusiť program pomocou príkazu ``make run``.
