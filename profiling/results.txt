@@ -1,0 +1,210 @@
+         6870 function calls (6051 primitive calls) in 0.006 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+   486/54    0.001    0.000    0.002    0.000 copy.py:132(deepcopy)
+      594    0.001    0.000    0.001    0.000 lexer.py:70(_next)
+    54/45    0.001    0.000    0.004    0.000 lexer.py:179(_make_function)
+   189/54    0.000    0.000    0.005    0.000 lexer.py:83(generate_tokens)
+       54    0.000    0.000    0.002    0.000 copy.py:268(_reconstruct)
+    54/45    0.000    0.000    0.001    0.000 lexer.py:75(_tokenize_sub_text)
+       54    0.000    0.000    0.001    0.000 copy.py:236(_deepcopy_dict)
+      162    0.000    0.000    0.000    0.000 copy.py:252(_keep_alive)
+       54    0.000    0.000    0.000    0.000 lexer.py:144(_make_number)
+     1026    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+     90/9    0.000    0.000    0.001    0.000 parser.py:116(_term)
+       63    0.000    0.000    0.000    0.000 lexer.py:19(__init__)
+       54    0.000    0.000    0.000    0.000 lexer.py:164(_make_identifier)
+      864    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+       54    0.000    0.000    0.000    0.000 function_token.py:12(__init__)
+        9    0.000    0.000    0.000    0.000 default_lexer.py:5(get_default_lexer)
+     18/9    0.000    0.000    0.000    0.000 parser.py:60(_factor)
+      126    0.000    0.000    0.000    0.000 token.py:20(__init__)
+      684    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       18    0.000    0.000    0.000    0.000 parser.py:28(__init__)
+     72/9    0.000    0.000    0.001    0.000 parser.py:105(_binary_operator)
+       54    0.000    0.000    0.000    0.000 {method '__reduce_ex__' of 'object' objects}
+       45    0.000    0.000    0.000    0.000 random.py:224(_randbelow)
+       45    0.000    0.000    0.000    0.000 random.py:174(randrange)
+      108    0.000    0.000    0.000    0.000 copy.py:273(<genexpr>)
+        9    0.000    0.000    0.006    0.001 profiling10.py:7(calculator)
+      324    0.000    0.000    0.000    0.000 copy.py:190(_deepcopy_atomic)
+       54    0.000    0.000    0.000    0.000 copyreg.py:87(__newobj__)
+     72/9    0.000    0.000    0.001    0.000 parser.py:120(<lambda>)
+       54    0.000    0.000    0.000    0.000 copy.py:210(_deepcopy_list)
+       36    0.000    0.000    0.000    0.000 parser.py:51(_next)
+       54    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+       27    0.000    0.000    0.000    0.000 expression.py:80(__init__)
+       54    0.000    0.000    0.000    0.000 expression.py:9(__init__)
+      135    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        9    0.000    0.000    0.000    0.000 number_node.py:10(__init__)
+      108    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+       36    0.000    0.000    0.000    0.000 lexer.py:31(add_operator)
+       45    0.000    0.000    0.000    0.000 random.py:218(randint)
+      108    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+     18/9    0.000    0.000    0.001    0.000 parser.py:122(_expr)
+       71    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}
+       55    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+       18    0.000    0.000    0.000    0.000 function_token.py:21(arguments)
+        9    0.000    0.000    0.000    0.000 parser.py:46(_get_sub_parser)
+       18    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+       54    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x7f8d76306cc0}
+       63    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+       36    0.000    0.000    0.000    0.000 expression.py:59(__init__)
+       54    0.000    0.000    0.000    0.000 lexer.py:43(add_function)
+       63    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+     18/9    0.000    0.000    0.001    0.000 parser.py:125(parse)
+        9    0.000    0.000    0.000    0.000 lexer.py:63(get_operators)
+       18    0.000    0.000    0.000    0.000 node.py:9(__init__)
+        9    0.000    0.000    0.000    0.000 function_node.py:13(__init__)
+       54    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+       36    0.000    0.000    0.000    0.000 parser.py:43(<lambda>)
+       54    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+       45    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+        1    0.000    0.000    0.000    0.000 copyreg.py:96(_slotnames)
+        9    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+         76990 function calls (67981 primitive calls) in 0.063 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+ 5346/594    0.011    0.000    0.026    0.000 copy.py:132(deepcopy)
+     7275    0.006    0.000    0.007    0.000 lexer.py:70(_next)
+  594/495    0.005    0.000    0.047    0.000 lexer.py:179(_make_function)
+ 2079/594    0.003    0.000    0.051    0.000 lexer.py:83(generate_tokens)
+      594    0.003    0.000    0.020    0.000 copy.py:268(_reconstruct)
+  594/495    0.002    0.000    0.016    0.000 lexer.py:75(_tokenize_sub_text)
+      594    0.002    0.000    0.011    0.000 copy.py:236(_deepcopy_dict)
+      594    0.002    0.000    0.003    0.000 lexer.py:144(_make_number)
+     1782    0.002    0.000    0.003    0.000 copy.py:252(_keep_alive)
+    11286    0.002    0.000    0.002    0.000 {method 'get' of 'dict' objects}
+      594    0.002    0.000    0.004    0.000 lexer.py:164(_make_identifier)
+      693    0.002    0.000    0.002    0.000 lexer.py:19(__init__)
+     9504    0.001    0.000    0.001    0.000 {built-in method builtins.id}
+      594    0.001    0.000    0.002    0.000 function_token.py:12(__init__)
+       99    0.001    0.000    0.003    0.000 default_lexer.py:5(get_default_lexer)
+     8265    0.001    0.000    0.001    0.000 {built-in method builtins.len}
+   198/99    0.001    0.000    0.004    0.000 parser.py:60(_factor)
+     1386    0.001    0.000    0.001    0.000 token.py:20(__init__)
+   990/99    0.001    0.000    0.005    0.000 parser.py:116(_term)
+      198    0.001    0.000    0.001    0.000 parser.py:28(__init__)
+      594    0.001    0.000    0.001    0.000 {method '__reduce_ex__' of 'object' objects}
+   792/99    0.001    0.000    0.005    0.000 parser.py:105(_binary_operator)
+      495    0.001    0.000    0.002    0.000 random.py:174(randrange)
+       99    0.001    0.000    0.061    0.001 profiling100.py:7(calculator)
+      495    0.001    0.000    0.001    0.000 random.py:224(_randbelow)
+   792/99    0.001    0.000    0.005    0.000 parser.py:120(<lambda>)
+     3564    0.001    0.000    0.001    0.000 copy.py:190(_deepcopy_atomic)
+     1188    0.001    0.000    0.002    0.000 copy.py:273(<genexpr>)
+      594    0.001    0.000    0.001    0.000 copy.py:210(_deepcopy_list)
+      594    0.000    0.000    0.001    0.000 copyreg.py:87(__newobj__)
+      396    0.000    0.000    0.001    0.000 parser.py:51(_next)
+     1188    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+     1188    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+      495    0.000    0.000    0.002    0.000 random.py:218(randint)
+      594    0.000    0.000    0.000    0.000 expression.py:9(__init__)
+     1485    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+      594    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+      297    0.000    0.000    0.000    0.000 expression.py:80(__init__)
+      396    0.000    0.000    0.000    0.000 lexer.py:31(add_operator)
+   198/99    0.000    0.000    0.005    0.000 parser.py:122(_expr)
+      396    0.000    0.000    0.000    0.000 expression.py:59(__init__)
+      759    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}
+      198    0.000    0.000    0.000    0.000 function_token.py:21(arguments)
+      594    0.000    0.000    0.000    0.000 lexer.py:43(add_function)
+      693    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+       99    0.000    0.000    0.001    0.000 parser.py:46(_get_sub_parser)
+      198    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+      594    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x7f55bcd09cc0}
+      595    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+      693    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+       99    0.000    0.000    0.000    0.000 number_node.py:10(__init__)
+      594    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+      594    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+   198/99    0.000    0.000    0.005    0.000 parser.py:125(parse)
+       99    0.000    0.000    0.000    0.000 function_node.py:13(__init__)
+      396    0.000    0.000    0.000    0.000 parser.py:43(<lambda>)
+      495    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+      198    0.000    0.000    0.000    0.000 node.py:9(__init__)
+       99    0.000    0.000    0.000    0.000 lexer.py:63(get_operators)
+       99    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 copyreg.py:96(_slotnames)
+        1    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+         796878 function calls (705969 primitive calls) in 0.648 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+53946/5994    0.106    0.000    0.258    0.000 copy.py:132(deepcopy)
+    83776    0.072    0.000    0.082    0.000 lexer.py:70(_next)
+5994/4995    0.057    0.000    0.485    0.000 lexer.py:179(_make_function)
+20979/5994    0.034    0.000    0.530    0.000 lexer.py:83(generate_tokens)
+     5994    0.031    0.000    0.196    0.000 copy.py:268(_reconstruct)
+     5994    0.025    0.000    0.042    0.000 lexer.py:144(_make_number)
+5994/4995    0.021    0.000    0.169    0.000 lexer.py:75(_tokenize_sub_text)
+     5994    0.021    0.000    0.110    0.000 copy.py:236(_deepcopy_dict)
+    17982    0.020    0.000    0.025    0.000 copy.py:252(_keep_alive)
+   113886    0.019    0.000    0.019    0.000 {method 'get' of 'dict' objects}
+     6993    0.016    0.000    0.024    0.000 lexer.py:19(__init__)
+     5994    0.015    0.000    0.035    0.000 lexer.py:164(_make_identifier)
+    95904    0.014    0.000    0.014    0.000 {built-in method builtins.id}
+     5994    0.013    0.000    0.018    0.000 function_token.py:12(__init__)
+      999    0.013    0.000    0.031    0.000 default_lexer.py:5(get_default_lexer)
+    93766    0.012    0.000    0.012    0.000 {built-in method builtins.len}
+ 1998/999    0.010    0.000    0.038    0.000 parser.py:60(_factor)
+    13986    0.009    0.000    0.009    0.000 token.py:20(__init__)
+ 9990/999    0.009    0.000    0.049    0.000 parser.py:116(_term)
+     1998    0.008    0.000    0.014    0.000 parser.py:28(__init__)
+     5994    0.008    0.000    0.008    0.000 {method '__reduce_ex__' of 'object' objects}
+ 7992/999    0.007    0.000    0.047    0.000 parser.py:105(_binary_operator)
+     4995    0.007    0.000    0.016    0.000 random.py:174(randrange)
+      999    0.007    0.000    0.629    0.001 profiling1000.py:7(calculator)
+     4995    0.006    0.000    0.009    0.000 random.py:224(_randbelow)
+ 7992/999    0.006    0.000    0.046    0.000 parser.py:120(<lambda>)
+     5994    0.005    0.000    0.007    0.000 copyreg.py:87(__newobj__)
+    11988    0.005    0.000    0.019    0.000 copy.py:273(<genexpr>)
+     5994    0.005    0.000    0.006    0.000 copy.py:210(_deepcopy_list)
+    35964    0.005    0.000    0.005    0.000 copy.py:190(_deepcopy_atomic)
+     3996    0.004    0.000    0.005    0.000 parser.py:51(_next)
+    11988    0.004    0.000    0.004    0.000 {built-in method builtins.isinstance}
+    11988    0.004    0.000    0.004    0.000 {built-in method builtins.getattr}
+     5994    0.003    0.000    0.003    0.000 expression.py:9(__init__)
+     4995    0.003    0.000    0.019    0.000 random.py:218(randint)
+     5994    0.003    0.000    0.003    0.000 {method 'update' of 'dict' objects}
+    14985    0.003    0.000    0.003    0.000 {method 'append' of 'list' objects}
+     2997    0.003    0.000    0.004    0.000 expression.py:80(__init__)
+     3996    0.003    0.000    0.003    0.000 lexer.py:31(add_operator)
+ 1998/999    0.002    0.000    0.050    0.000 parser.py:122(_expr)
+     3996    0.002    0.000    0.002    0.000 expression.py:59(__init__)
+     6945    0.002    0.000    0.002    0.000 {method 'getrandbits' of '_random.Random' objects}
+     6993    0.002    0.000    0.002    0.000 {method 'pop' of 'list' objects}
+     1998    0.002    0.000    0.002    0.000 {built-in method builtins.sorted}
+     5994    0.002    0.000    0.002    0.000 lexer.py:43(add_function)
+     1998    0.002    0.000    0.002    0.000 function_token.py:21(arguments)
+      999    0.002    0.000    0.007    0.000 parser.py:46(_get_sub_parser)
+     5994    0.002    0.000    0.002    0.000 {built-in method __new__ of type object at 0x7f501b4eecc0}
+      999    0.002    0.000    0.002    0.000 number_node.py:10(__init__)
+     5995    0.001    0.000    0.001    0.000 {built-in method builtins.hasattr}
+ 1998/999    0.001    0.000    0.051    0.000 parser.py:125(parse)
+     6993    0.001    0.000    0.001    0.000 {method 'keys' of 'dict' objects}
+     5994    0.001    0.000    0.001    0.000 {built-in method builtins.issubclass}
+     5994    0.001    0.000    0.001    0.000 {method 'items' of 'dict' objects}
+      999    0.001    0.000    0.002    0.000 function_node.py:13(__init__)
+     3996    0.001    0.000    0.001    0.000 parser.py:43(<lambda>)
+     4995    0.001    0.000    0.001    0.000 {method 'bit_length' of 'int' objects}
+     1998    0.001    0.000    0.001    0.000 node.py:9(__init__)
+      999    0.001    0.000    0.001    0.000 lexer.py:63(get_operators)
+      999    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 copyreg.py:96(_slotnames)
+        1    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

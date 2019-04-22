@@ -1,42 +1,31 @@
 from PySide2 import QtWidgets, QtCore
 
-style = """
-QLineEdit {{
-    padding-top: {verticalPadding}px;
-    padding-bottom: {verticalPadding}px;
-    padding-left: {horizontalPadding}px;
-    padding-right: {horizontalPadding}px;
-    margin-bottom: {verticalPadding}px;
-    font: normal {fontSize}px;
-    max-height: {maxHeight}px;
-}}
-
-QLineEdit[error=true] {{
-    border: 1px solid red;
-}}
-"""
+# style = """
+# QLineEdit {{
+#     padding-top: {verticalPadding}px;
+#     padding-bottom: {verticalPadding}px;
+#     padding-left: {horizontalPadding}px;
+#     padding-right: {horizontalPadding}px;
+#     margin-bottom: {verticalPadding}px;
+#     font: normal {fontSize}px;
+#     max-height: {maxHeight}px;
+# }}
+#
+# QLineEdit[error=true] {{
+#     border: 1px solid red;
+# }}
+# """
 
 illegalStartStrings = {"0", "+"}
 
 
 class CalculatorScreen(QtWidgets.QLineEdit):
-    def __init__(self, font_size: int = 32, padding: int = 16):
+    def __init__(self):
         super().__init__()
         self.selectionChanged.connect(self._onSelect)
         self.lastSelection = (-1, -1)
         self.blockOnSelect = False
-
         self.setAlignment(QtCore.Qt.AlignRight | QtCore.Qt.AlignVCenter)
-
-        self.setStyleSheet(
-            style.format(
-                verticalPadding=padding,
-                horizontalPadding=padding,
-                fontSize=font_size,
-                maxHeight=font_size * 2
-            )
-        )
-
         self.setLayout(QtWidgets.QHBoxLayout())
 
     def _onSelect(self):
@@ -75,7 +64,11 @@ class CalculatorScreen(QtWidgets.QLineEdit):
         return start
 
     def markError(self):
-        self.setProperty("error", True)
+        self.setProperty("hasError", "True")
+        self.style().unpolish(self)
+        self.style().polish(self)
 
     def unmarkError(self):
-        self.setProperty("error", False)
+        self.setProperty("hasError", "False")
+        self.style().unpolish(self)
+        self.style().polish(self)
