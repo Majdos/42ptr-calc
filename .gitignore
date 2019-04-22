@@ -1,5 +1,6 @@
 # Build dir
 build
+doc/source/modules
 
 # Compiled Object files
 *.o
@@ -26,7 +27,7 @@ __pycache__
 .env
 
 # Compiled i18n messages
-translations/*.mo
+**/translations/**/*.mo
 
 # Extracted i18n templates
-translations/*.pot
+**/translations/**/*.pot

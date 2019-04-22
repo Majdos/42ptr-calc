@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Marián Lorinc, Lukáš Javorský, Patrik Ondriga, Peter
+# Vinarčík
+# This file is distributed under the same license as the 42ptr calc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 42ptr calc 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-20 16:03+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/modules/ptr42.math_language.parser.rst:2
+msgid "ptr42.math\\_language.parser namespace"
+msgstr ""
+
+#: ../../source/modules/ptr42.math_language.parser.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/modules/ptr42.math_language.parser.rst:8
+msgid "ptr42.math\\_language.parser.binary\\_operator\\_node module"
+msgstr ""
+
+#: of ptr42.math_language.parser.binary_operator_node.BinaryOperatorNode:1
+#: ptr42.math_language.parser.function_node.FunctionNode:1
+#: ptr42.math_language.parser.number_node.NumberNode:1
+#: ptr42.math_language.parser.unary_operator_node.UnaryOperatorNode:1
+msgid "Bases: :class:`ptr42.math_language.parser.node.Node`"
+msgstr ""
+
+#: of ptr42.math_language.parser.binary_operator_node.BinaryOperatorNode:1
+msgid ""
+"Trieda reprezentujuca binarnu operaciu v abstraktnom syntaxovom strome "
+"(AST)"
+msgstr ""
+
+#: of
+#: ptr42.math_language.parser.binary_operator_node.BinaryOperatorNode.evaluate:1
+msgid "Vypocita hodnotu aktualneho uzla a uzlov pod tymto uzlom"
+msgstr ""
+
+#: of
+#: ptr42.math_language.parser.binary_operator_node.BinaryOperatorNode.evaluate
+#: ptr42.math_language.parser.expression.Function.evaluate
+#: ptr42.math_language.parser.function_node.FunctionNode.evaluate
+#: ptr42.math_language.parser.node.Node.evaluate
+#: ptr42.math_language.parser.number_node.NumberNode.evaluate
+#: ptr42.math_language.parser.parser.MathParser.parse
+#: ptr42.math_language.parser.unary_operator_node.UnaryOperatorNode.evaluate
+msgid "Returns"
+msgstr ""
+
+#: of
+#: ptr42.math_language.parser.binary_operator_node.BinaryOperatorNode.evaluate:3
+#: ptr42.math_language.parser.function_node.FunctionNode.evaluate:3
+#: ptr42.math_language.parser.unary_operator_node.UnaryOperatorNode.evaluate:3
+msgid "vysledok ako float"
+msgstr ""
+
+#: ../../source/modules/ptr42.math_language.parser.rst:16
+msgid "ptr42.math\\_language.parser.expression module"
+msgstr ""
+
+#: of ptr42.math_language.parser.expression.BinaryOperator:1
+#: ptr42.math_language.parser.expression.UnaryOperator:1
+msgid "Bases: :class:`ptr42.math_language.parser.expression.Operator`"
+msgstr ""
+
+#: of ptr42.math_language.parser.expression.Constant:1
+#: ptr42.math_language.parser.expression.Function:1
+#: ptr42.math_language.parser.expression.Operator:1
+#: ptr42.math_language.parser.node.Node:1
+#: ptr42.math_language.parser.parser.MathParser:1
+msgid "Bases: :class:`object`"
+msgstr ""
+
+#: of ptr42.math_language.parser.expression.Constant:1
+msgid "Trieda ktora reprezentuje konstantu. Konstanta moze mat svoje meno(name)."
+msgstr ""
+
+#: of ptr42.math_language.parser.expression.Function:1
+msgid "Objekt reprezentujuci funkciu"
+msgstr ""
+
+#: of ptr42.math_language.parser.expression.Function.evaluate:1
+msgid "Spusti funkciu s nastavenymi argumentami, ktore nastavuje set_args"
+msgstr ""
+
+#: of ptr42.math_language.parser.expression.Function.evaluate:3
+msgid "vysledok funkcie"
+msgstr ""
+
+#: of ptr42.math_language.parser.expression.Function.set_args:1
+msgid "Nastavi argumenty, ktore sa doplnia v evaluacii"
+msgstr ""
+
+#: of ptr42.math_language.parser.expression.Function.set_args
+msgid "Parameters"
+msgstr ""
+
+#: of ptr42.math_language.parser.expression.Function.set_args:3
+msgid "argumenty, ktore sa nastavia dalsi eval"
+msgstr ""
+
+#: of ptr42.math_language.parser.expression.Operator:1
+msgid "Trieda reprezentujuca binarny aj unarny operator"
+msgstr ""
+
+#: ../../source/modules/ptr42.math_language.parser.rst:24
+msgid "ptr42.math\\_language.parser.function\\_node module"
+msgstr ""
+
+#: of ptr42.math_language.parser.function_node.FunctionNode:1
+msgid "Vrchol reprezentujuci funkcie v abstraktom syntaxovom strome (AST)"
+msgstr ""
+
+#: of ptr42.math_language.parser.function_node.FunctionNode.evaluate:1
+msgid "Vypocita hodnotu tohoto uzla a hodnoty argumentov"
+msgstr ""
+
+#: ../../source/modules/ptr42.math_language.parser.rst:32
+msgid "ptr42.math\\_language.parser.node module"
+msgstr ""
+
+#: of ptr42.math_language.parser.node.Node:1
+msgid "Abstraktna struktura reprezentujuca vrhcol v AST"
+msgstr ""
+
+#: of ptr42.math_language.parser.node.Node.evaluate:1
+msgid "Vypocita hodnotu vrcholu"
+msgstr ""
+
+#: of ptr42.math_language.parser.node.Node.evaluate:3
+msgid "hodnota vrcholu ako float"
+msgstr ""
+
+#: ../../source/modules/ptr42.math_language.parser.rst:40
+msgid "ptr42.math\\_language.parser.number\\_node module"
+msgstr ""
+
+#: of ptr42.math_language.parser.number_node.NumberNode:1
+msgid "Trieda reprezentujuca ciselny, konstantny vrchol"
+msgstr ""
+
+#: of ptr42.math_language.parser.number_node.NumberNode.evaluate:1
+msgid "Vrati ciselnu hodnotu vrcholu"
+msgstr ""
+
+#: of ptr42.math_language.parser.number_node.NumberNode.evaluate:3
+msgid "ciselna hodnota vrcholu ako float"
+msgstr ""
+
+#: ../../source/modules/ptr42.math_language.parser.rst:48
+msgid "ptr42.math\\_language.parser.parser module"
+msgstr ""
+
+#: of ptr42.math_language.parser.parser.MathParser:1
+msgid ""
+"Matematicky parser, ktory pomocou tokenov zostroji abstraktny syntaxovi "
+"strom (AST). Pomocou AST sa dokaze vypocitat celkovy matematicky vyraz."
+msgstr ""
+
+#: of ptr42.math_language.parser.parser.MathParser.parse:1
+msgid "Vrati korenovy vrchol z AST, podla ktoreho sa da dalej vypocitat vyraz"
+msgstr ""
+
+#: of ptr42.math_language.parser.parser.MathParser.parse:3
+msgid "korenovy vrchol"
+msgstr ""
+
+#: ../../source/modules/ptr42.math_language.parser.rst:56
+msgid "ptr42.math\\_language.parser.parser\\_error module"
+msgstr ""
+
+#: of ptr42.math_language.parser.parser_error.ParserError:1
+msgid "Bases: :class:`Exception`"
+msgstr ""
+
+#: ../../source/modules/ptr42.math_language.parser.rst:64
+msgid "ptr42.math\\_language.parser.unary\\_operator\\_node module"
+msgstr ""
+
+#: of ptr42.math_language.parser.unary_operator_node.UnaryOperatorNode:1
+msgid "Vrchol reprezentujuci unarny operator"
+msgstr ""
+
+#: of
+#: ptr42.math_language.parser.unary_operator_node.UnaryOperatorNode.evaluate:1
+msgid "Aplikuje unarny operator na vrhcol a vrati vysledok"
+msgstr ""
+

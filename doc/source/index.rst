@@ -1,8 +1,3 @@
-.. 42ptr calc documentation master file, created by
-   sphinx-quickstart on Mon Mar 25 21:01:33 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Vitajte v dokumentácii projektu 42ptr calc!
 ===========================================
 
@@ -25,12 +20,10 @@ Nahlasovaníe chýb a pripomienky
 Ak uvidíte nejakú chybu alebo máte nejakú pripomienku, neváhajte nás
 kontaktovať prostredníctvom `issues na githube`_. Každú spätnú väzbu si vážime ;)
 
-Obsah
------
-
 .. toctree::
     :maxdepth: 3
+    :caption: Obsah:
 
     install.md
-    math.rst
     i18n.rst
+    modules/modules.rst
