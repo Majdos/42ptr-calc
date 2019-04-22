@@ -9,6 +9,7 @@ recommonmark = "*"
 sphinx-intl = "*"
 pyinstaller = "*"
 pynsist = "*"
+sphinx-rtd-theme = "*"
 
 [packages]
 pyside2 = "*"

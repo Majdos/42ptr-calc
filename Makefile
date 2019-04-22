@@ -10,7 +10,7 @@ TESTS_LOCATION=.
 I18N_DIRECTORY=./resources/translations
 I18N_DOMAIN=messages
 
-SRC=./src
+SRC=./ptr42
 
 .PHONY: all pack clean test all-tests doc run install profile i18n_extract i18n_init i18n_update i18n_compile
 
@@ -53,7 +53,7 @@ doc:
 
 	cd $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/source && sphinx-build -b html -D language=$(LANGUAGE) . ../build/html/$(LANGUAGE)
 
-run: install i18n_compile
+run:
 	pipenv run bash -c "python setup.py develop && calc42"
 
 install:
