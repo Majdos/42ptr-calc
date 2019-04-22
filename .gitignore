@@ -1,6 +1,6 @@
 # Build dir
 build
-doc/source/modules
+docs/source/modules
 dist
 deploy/42calc-*
 
