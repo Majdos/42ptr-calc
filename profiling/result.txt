@@ -1,0 +1,243 @@
+         5027 function calls (4238 primitive calls) in 0.005 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       42    0.000    0.000    0.001    0.000 default_lexer.py:6(get_default_lexer)
+       89    0.000    0.000    0.001    0.000 lexer.py:144(_make_number)
+      437    0.000    0.000    0.000    0.000 lexer.py:70(_next)
+   244/42    0.000    0.000    0.001    0.000 parser.py:105(_binary_operator)
+  184/166    0.000    0.000    0.001    0.000 lexer.py:83(generate_tokens)
+    92/83    0.000    0.000    0.001    0.000 parser.py:60(_factor)
+   336/42    0.000    0.000    0.001    0.000 parser.py:116(_term)
+       42    0.000    0.000    0.005    0.000 profiling.py:8(calculator)
+   291/42    0.000    0.000    0.001    0.000 parser.py:120(<lambda>)
+       43    0.000    0.000    0.000    0.000 parser.py:28(__init__)
+      184    0.000    0.000    0.000    0.000 parser.py:51(_next)
+      252    0.000    0.000    0.000    0.000 expression.py:9(__init__)
+      835    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       43    0.000    0.000    0.000    0.000 lexer.py:19(__init__)
+      126    0.000    0.000    0.000    0.000 expression.py:80(__init__)
+       89    0.000    0.000    0.000    0.000 number_node.py:10(__init__)
+      168    0.000    0.000    0.000    0.000 lexer.py:31(add_operator)
+      168    0.000    0.000    0.000    0.000 expression.py:59(__init__)
+    47/42    0.000    0.000    0.000    0.000 binary_operator_node.py:26(evaluate)
+      141    0.000    0.000    0.000    0.000 token.py:20(__init__)
+      252    0.000    0.000    0.000    0.000 lexer.py:43(add_function)
+       47    0.000    0.000    0.000    0.000 binary_operator_node.py:10(__init__)
+    45/42    0.000    0.000    0.002    0.000 parser.py:122(_expr)
+      137    0.000    0.000    0.000    0.000 node.py:9(__init__)
+       43    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+      9/1    0.000    0.000    0.000    0.000 copy.py:132(deepcopy)
+        1    0.000    0.000    0.000    0.000 lexer.py:179(_make_function)
+       47    0.000    0.000    0.000    0.000 expression.py:67(evaluate)
+    43/42    0.000    0.000    0.002    0.000 parser.py:125(parse)
+       42    0.000    0.000    0.000    0.000 lexer.py:63(get_operators)
+      168    0.000    0.000    0.000    0.000 parser.py:43(<lambda>)
+       89    0.000    0.000    0.000    0.000 number_node.py:20(evaluate)
+       30    0.000    0.000    0.000    0.000 math42.py:6(addition)
+        2    0.000    0.000    0.000    0.000 function_token.py:22(arguments)
+       52    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method '__reduce_ex__' of 'object' objects}
+        1    0.000    0.000    0.000    0.000 copy.py:268(_reconstruct)
+        2    0.000    0.000    0.000    0.000 codecs.py:319(decode)
+        1    0.000    0.000    0.000    0.000 lexer.py:75(_tokenize_sub_text)
+        1    0.000    0.000    0.000    0.000 copy.py:236(_deepcopy_dict)
+        1    0.000    0.000    0.000    0.000 copyreg.py:96(_slotnames)
+        3    0.000    0.000    0.000    0.000 copy.py:252(_keep_alive)
+        1    0.000    0.000    0.000    0.000 function_node.py:23(evaluate)
+        1    0.000    0.000    0.000    0.000 copyreg.py:87(__newobj__)
+       42    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method _codecs.utf_8_decode}
+       19    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+       24    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 math42.py:116(sqrt)
+        1    0.000    0.000    0.000    0.000 lexer.py:164(_make_identifier)
+        1    0.000    0.000    0.000    0.000 function_token.py:12(__init__)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        1    0.000    0.000    0.000    0.000 copy.py:210(_deepcopy_list)
+        2    0.000    0.000    0.000    0.000 copy.py:273(<genexpr>)
+        2    0.000    0.000    0.000    0.000 math42.py:52(division)
+        1    0.000    0.000    0.000    0.000 parser.py:46(_get_sub_parser)
+        1    0.000    0.000    0.000    0.000 expression.py:19(set_args)
+        1    0.000    0.000    0.000    0.000 function_node.py:13(__init__)
+        1    0.000    0.000    0.000    0.000 expression.py:31(evaluate)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        5    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        6    0.000    0.000    0.000    0.000 copy.py:190(_deepcopy_atomic)
+        2    0.000    0.000    0.000    0.000 math42.py:20(subtract)
+       13    0.000    0.000    0.000    0.000 math42.py:41(multiplication)
+        1    0.000    0.000    0.000    0.000 function_node.py:29(<lambda>)
+        1    0.000    0.000    0.000    0.000 {built-in method math.sqrt}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+       16    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        1    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x7f1f524adcc0}
+        1    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+        1    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+         45263 function calls (38534 primitive calls) in 0.042 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      402    0.004    0.000    0.011    0.000 default_lexer.py:6(get_default_lexer)
+      809    0.004    0.000    0.008    0.000 lexer.py:144(_make_number)
+     4085    0.004    0.000    0.004    0.000 lexer.py:70(_next)
+ 2224/402    0.003    0.000    0.012    0.000 parser.py:105(_binary_operator)
+1624/1606    0.003    0.000    0.012    0.000 lexer.py:83(generate_tokens)
+  812/803    0.002    0.000    0.005    0.000 parser.py:60(_factor)
+ 3036/402    0.002    0.000    0.013    0.000 parser.py:116(_term)
+      402    0.002    0.000    0.042    0.000 profiling.py:8(calculator)
+ 2631/402    0.002    0.000    0.012    0.000 parser.py:120(<lambda>)
+      403    0.002    0.000    0.003    0.000 parser.py:28(__init__)
+     1624    0.002    0.000    0.002    0.000 parser.py:51(_next)
+     2412    0.001    0.000    0.001    0.000 expression.py:9(__init__)
+      403    0.001    0.000    0.002    0.000 lexer.py:19(__init__)
+     1206    0.001    0.000    0.002    0.000 expression.py:80(__init__)
+      809    0.001    0.000    0.001    0.000 number_node.py:10(__init__)
+     7723    0.001    0.000    0.001    0.000 {built-in method builtins.len}
+     1608    0.001    0.000    0.001    0.000 lexer.py:31(add_operator)
+     1221    0.001    0.000    0.001    0.000 token.py:20(__init__)
+     1608    0.001    0.000    0.001    0.000 expression.py:59(__init__)
+  407/402    0.001    0.000    0.001    0.000 binary_operator_node.py:26(evaluate)
+     2412    0.001    0.000    0.001    0.000 lexer.py:43(add_function)
+      407    0.000    0.000    0.001    0.000 binary_operator_node.py:10(__init__)
+  405/402    0.000    0.000    0.013    0.000 parser.py:122(_expr)
+     1217    0.000    0.000    0.000    0.000 node.py:9(__init__)
+      403    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+     1608    0.000    0.000    0.000    0.000 parser.py:43(<lambda>)
+  403/402    0.000    0.000    0.013    0.000 parser.py:125(parse)
+      407    0.000    0.000    0.000    0.000 expression.py:67(evaluate)
+      809    0.000    0.000    0.000    0.000 number_node.py:20(evaluate)
+      402    0.000    0.000    0.000    0.000 lexer.py:63(get_operators)
+      300    0.000    0.000    0.000    0.000 math42.py:6(addition)
+      402    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+      412    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 lexer.py:179(_make_function)
+      9/1    0.000    0.000    0.000    0.000 copy.py:132(deepcopy)
+      103    0.000    0.000    0.000    0.000 math42.py:41(multiplication)
+        2    0.000    0.000    0.000    0.000 function_token.py:22(arguments)
+        1    0.000    0.000    0.000    0.000 {method '__reduce_ex__' of 'object' objects}
+        1    0.000    0.000    0.000    0.000 copy.py:268(_reconstruct)
+        2    0.000    0.000    0.000    0.000 codecs.py:319(decode)
+        1    0.000    0.000    0.000    0.000 lexer.py:75(_tokenize_sub_text)
+        1    0.000    0.000    0.000    0.000 copy.py:236(_deepcopy_dict)
+        3    0.000    0.000    0.000    0.000 copy.py:252(_keep_alive)
+        1    0.000    0.000    0.000    0.000 copyreg.py:96(_slotnames)
+       19    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 function_node.py:23(evaluate)
+        1    0.000    0.000    0.000    0.000 copyreg.py:87(__newobj__)
+        1    0.000    0.000    0.000    0.000 lexer.py:164(_make_identifier)
+        2    0.000    0.000    0.000    0.000 {built-in method _codecs.utf_8_decode}
+       24    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 math42.py:116(sqrt)
+        2    0.000    0.000    0.000    0.000 math42.py:52(division)
+        1    0.000    0.000    0.000    0.000 function_token.py:12(__init__)
+       16    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        6    0.000    0.000    0.000    0.000 copy.py:190(_deepcopy_atomic)
+        2    0.000    0.000    0.000    0.000 copy.py:273(<genexpr>)
+        1    0.000    0.000    0.000    0.000 expression.py:19(set_args)
+        1    0.000    0.000    0.000    0.000 function_node.py:13(__init__)
+        1    0.000    0.000    0.000    0.000 expression.py:31(evaluate)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 math42.py:20(subtract)
+        1    0.000    0.000    0.000    0.000 parser.py:46(_get_sub_parser)
+        1    0.000    0.000    0.000    0.000 {built-in method math.sqrt}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        1    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x7f2e42d02cc0}
+        5    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
+        1    0.000    0.000    0.000    0.000 copy.py:210(_deepcopy_list)
+        1    0.000    0.000    0.000    0.000 function_node.py:29(<lambda>)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+        1    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+         452495 function calls (386366 primitive calls) in 0.407 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     8009    0.044    0.000    0.080    0.000 lexer.py:144(_make_number)
+     4002    0.043    0.000    0.104    0.000 default_lexer.py:6(get_default_lexer)
+    43001    0.035    0.000    0.040    0.000 lexer.py:70(_next)
+22024/4002    0.029    0.000    0.116    0.000 parser.py:105(_binary_operator)
+16024/16006    0.025    0.000    0.112    0.000 lexer.py:83(generate_tokens)
+8012/8003    0.023    0.000    0.042    0.000 parser.py:60(_factor)
+30036/4002    0.023    0.000    0.120    0.000 parser.py:116(_term)
+     4002    0.022    0.000    0.407    0.000 profiling.py:8(calculator)
+26031/4002    0.017    0.000    0.112    0.000 parser.py:120(<lambda>)
+     4003    0.015    0.000    0.026    0.000 parser.py:28(__init__)
+    16024    0.014    0.000    0.016    0.000 parser.py:51(_next)
+    24012    0.013    0.000    0.013    0.000 expression.py:9(__init__)
+     4003    0.010    0.000    0.015    0.000 lexer.py:19(__init__)
+    12006    0.009    0.000    0.015    0.000 expression.py:80(__init__)
+    79039    0.009    0.000    0.009    0.000 {built-in method builtins.len}
+     8009    0.008    0.000    0.011    0.000 number_node.py:10(__init__)
+    16008    0.008    0.000    0.010    0.000 lexer.py:31(add_operator)
+    16008    0.008    0.000    0.008    0.000 expression.py:59(__init__)
+    12021    0.007    0.000    0.007    0.000 token.py:20(__init__)
+4007/4002    0.007    0.000    0.013    0.000 binary_operator_node.py:26(evaluate)
+    24012    0.006    0.000    0.006    0.000 lexer.py:43(add_function)
+4005/4002    0.004    0.000    0.125    0.000 parser.py:122(_expr)
+     4007    0.004    0.000    0.005    0.000 binary_operator_node.py:10(__init__)
+    12017    0.004    0.000    0.004    0.000 node.py:9(__init__)
+     4003    0.003    0.000    0.003    0.000 {built-in method builtins.sorted}
+    16008    0.003    0.000    0.003    0.000 parser.py:43(<lambda>)
+     4007    0.003    0.000    0.004    0.000 expression.py:67(evaluate)
+4003/4002    0.002    0.000    0.127    0.000 parser.py:125(parse)
+     8009    0.002    0.000    0.002    0.000 number_node.py:20(evaluate)
+     4002    0.002    0.000    0.003    0.000 lexer.py:63(get_operators)
+     3000    0.001    0.000    0.001    0.000 math42.py:6(addition)
+     4012    0.001    0.000    0.001    0.000 {method 'keys' of 'dict' objects}
+     4002    0.001    0.000    0.001    0.000 {method 'values' of 'dict' objects}
+     1003    0.000    0.000    0.000    0.000 math42.py:41(multiplication)
+        1    0.000    0.000    0.000    0.000 lexer.py:179(_make_function)
+      9/1    0.000    0.000    0.000    0.000 copy.py:132(deepcopy)
+        1    0.000    0.000    0.000    0.000 {method '__reduce_ex__' of 'object' objects}
+       24    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 codecs.py:319(decode)
+        1    0.000    0.000    0.000    0.000 copy.py:268(_reconstruct)
+        1    0.000    0.000    0.000    0.000 copyreg.py:96(_slotnames)
+        1    0.000    0.000    0.000    0.000 lexer.py:75(_tokenize_sub_text)
+        1    0.000    0.000    0.000    0.000 copy.py:236(_deepcopy_dict)
+        2    0.000    0.000    0.000    0.000 function_token.py:22(arguments)
+        1    0.000    0.000    0.000    0.000 function_node.py:23(evaluate)
+        1    0.000    0.000    0.000    0.000 copyreg.py:87(__newobj__)
+        2    0.000    0.000    0.000    0.000 {built-in method _codecs.utf_8_decode}
+       19    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 math42.py:116(sqrt)
+        3    0.000    0.000    0.000    0.000 copy.py:252(_keep_alive)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        2    0.000    0.000    0.000    0.000 math42.py:52(division)
+        1    0.000    0.000    0.000    0.000 function_token.py:12(__init__)
+       16    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        1    0.000    0.000    0.000    0.000 lexer.py:164(_make_identifier)
+        6    0.000    0.000    0.000    0.000 copy.py:190(_deepcopy_atomic)
+        1    0.000    0.000    0.000    0.000 copy.py:210(_deepcopy_list)
+        1    0.000    0.000    0.000    0.000 parser.py:46(_get_sub_parser)
+        1    0.000    0.000    0.000    0.000 expression.py:19(set_args)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        1    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x7fce3554acc0}
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 copy.py:273(<genexpr>)
+        2    0.000    0.000    0.000    0.000 math42.py:20(subtract)
+        1    0.000    0.000    0.000    0.000 function_node.py:13(__init__)
+        1    0.000    0.000    0.000    0.000 expression.py:31(evaluate)
+        1    0.000    0.000    0.000    0.000 function_node.py:29(<lambda>)
+        1    0.000    0.000    0.000    0.000 {built-in method math.sqrt}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        5    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+        1    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+
+
