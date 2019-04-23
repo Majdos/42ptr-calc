@@ -1,1 +1,24 @@
-tento soubor bude obsahovat rozdil mezi planem projektu a skutecnosti
+Pri plánovaní sme mali trošku iné predstavy, ktoré nám ale nevyšli presne ako sme chceli.
+
+1. Naplánovanie šprintov sme mali nepresné, pretože sme si pomýlili termín odovzdania
+    Riešenie: Presunuli sme niektoré veci do ostatných šprintov, aby sme to stihli urobiť
+    
+2. Delenie práce sme rozdelili inak, a robili sme to v trošku inom zostavení
+    Riešenie: Nikomu to nevadilo, tak sme si len v rámci tímu nanovo rozdelili prácu
+    
+3. Jazyk Python sme až tak nepoznali, preto sme mali väčšie problémy pri implementácii
+    Riešenie: Vedúci tímu v Pythone už vyvýjal pár projektov, tak sme sa k nemu mohli zastaviť pre radu
+    
+4. Tlačítka na zátvorky sme nestihli spraviť
+    Riešenie: Funguje ich manuálne dopísanie
+    
+5. Príprava inštalátora, nebola taká jednoduchá ako sme predpokladali
+    Riešnie: Zamerali sme sa primárne na platformu Windows
+    
+6. Komunikačný kanál Slack sa nevyužíval tak ako sme chceli, problém bol s časom odozvy medzi členami tímu
+    Riešenie: Niekedy sme museli využiť Facebook, aby sme sa rýchlejšie vedeli dohovoriť
+    
+7. Mockup sme nestili spraviť všetci, pre nedostatok času, či už kvôli škole alebo osobné problémy
+    Riešenie: Jeden jednotný mockup
+    
+8. Odovzdanie skôr aby sme mali čas na prípadné zmeny nám moc nevyšiel, ale ku koncu sme stihli všetko podstatné

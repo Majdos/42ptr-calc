@@ -26,8 +26,6 @@ setup(
         'Programming Language :: Python',
     ],
 
-    # Packages and dependencies
-    # package_dir={'': 'src'},
     packages=find_packages(exclude=("tests",)),
 
     install_requires=[
@@ -37,7 +35,8 @@ setup(
         'dev': [
             'sphinx',
             "recommonmark",
-            "sphinx-intl"
+            "sphinx-intl",
+            "sphinx_rtd_theme"
         ],
     },
 
