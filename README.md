@@ -32,7 +32,7 @@ Prvý krok je naklonovanie repozitára do vášho zariadenia, pre túto akciu st
 
 ### Inštalácia zo zdrojového kódu
 Najprv sa musíte premiestniť do priečinka, ktorý ste si naklonovali v predošlom kroku.    
-Následne presnejšie inštrukcie ako nainštalovať prostredie sú dostupné v [dokumentácii](https://github.com/Majdos/42ptr-calc/blob/master/doc/source/instalacia.md)
+Následne presnejšie inštrukcie ako nainštalovať prostredie sú dostupné v [dokumentácii](https://github.com/Majdos/42ptr-calc/blob/master/docs/source/install.md)
 
 ## Cieľové platformy
 

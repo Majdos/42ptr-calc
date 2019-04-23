@@ -51,6 +51,8 @@ setup(
     entry_points={
         'gui_scripts': [
             'calc42 = ptr42.main:main'],
+        'console_scripts': [
+            'profile = profiling.profiling:main'],
     },
 
     # Other configurations

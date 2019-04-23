@@ -1,5 +1,10 @@
+import gettext
 import unittest
+
 import ptr42.math42 as math
+
+lang = gettext.translation("messages", "resources/translations", ["sk_SK"])
+lang.install()
 
 
 class BasicOperations(unittest.TestCase):

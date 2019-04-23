@@ -1,9 +1,9 @@
-import sys
 import cProfile
-from random import randint
+import sys
 
-from ptr42.math_language.parser.parser import MathParser
 from ptr42.math_language.lexer.default_lexer import get_default_lexer
+from ptr42.math_language.parser.parser import MathParser
+
 
 def calculator(expresion: str) -> float:
     lexer = get_default_lexer(expresion)
@@ -11,22 +11,28 @@ def calculator(expresion: str) -> float:
     parser = MathParser(tokens, lexer.get_operators())
     return parser.parse().evaluate()
 
-if __name__ == '__main__':
+
+def main():
     pr = cProfile.Profile()
     pr.enable()
 
     counter = 0
-    intSum = 0
-    intSumPow2 = 0
+    int_sum = 0
+    int_sum_pow2 = 0
 
-    for input in sys.stdin:
+    for input_text in sys.stdin:
         counter = calculator(str(counter) + "+" + "1")
-        intSum = calculator(str(intSum) + "+" + str(float(input)))
-        inputPow2 = calculator(str(float(input)) + "*" + str(float(input)))
-        intSumPow2 = calculator(str(intSumPow2) + "+" + str(inputPow2))
+        int_sum = calculator(str(int_sum) + "+" + str(float(input_text)))
+        input_pow2 = calculator(str(float(input_text)) + "*" + str(float(input_text)))
+        int_sum_pow2 = calculator(str(int_sum_pow2) + "+" + str(input_pow2))
 
-    average = calculator(str(intSum) + "/" + str(counter))
-    calculator("sqrt("+"1/("+str(counter)+"-1)*("+str(intSumPow2)+"-"+str(counter)+"*"+str(average)+"*"+str(average)+"))")
-    
+    average = calculator(str(int_sum) + "/" + str(counter))
+    calculator("sqrt(" + "1/(" + str(counter) + "-1)*(" + str(int_sum_pow2) + "-" + str(counter) + "*" + str(
+        average) + "*" + str(average) + "))")
+
     pr.disable()
     pr.print_stats(sort='time')
+
+
+if __name__ == '__main__':
+    main()

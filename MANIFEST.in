@@ -1,6 +1,2 @@
 recursive-include resources/themes *.css
 recursive-include resources/translations *
-include packager/Makefile
-include packager/calc42.desktop
-include packager/install
-include calc42.sh
