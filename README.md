@@ -3,7 +3,7 @@
 Jednoduchá kalkulačka s GUI rozhraním, vlastným inštalátorom, dokumentáciou  
 a taktiež príručným manuálom pre uľahčenie použiteľnosti
 
-//TODO obrázok kalkulačky 
+<img src="screenshot.png">
 
 ## Základné informácie
 
@@ -19,6 +19,8 @@ Program kalkulačky je písaný v jazyku ``Python`` a GUI je riešené pomocou `
 Kalkulačka v sebe obsahuje sadu základných operácií (+,-,*,/,!,ln,sqrt,root,...).  
 Taktiež pomocou kalkulačky je možné premeniť čísla z binárnej,hexadecimálnej a oktálovej  
 sústavy na desiatkovú (pre zjednodušenie počtov).  
+Tieto funkcie, ale ešte nie je pridaná do výslednej podobe kalkulačky, a preto sme sa rozhodli  
+ju pridať v budúcej verzii a pridávame ju do mockupu, ktorý nájdete v zložke mockup
 Výzor kalkulačky sme nechali na preferencie užívateľa, to znamená, že sa prispôsobí téme,  
 ktorú má užívateľ nastavenú vo svojom systéme.
 
@@ -29,13 +31,11 @@ Prvý krok je naklonovanie repozitára do vášho zariadenia, pre túto akciu st
 ```git clone https://github.com/Majdos/42ptr-calc.git```
 
 ### Inštalácia zo zdrojového kódu
-Najprv sa musíte premiestniť do priečinka, ktorý ste si naklonovali v predošlom kroku.  
-//TODO základný postup inštalácie  
-Presnejšie inštrukcie ako nainštalovať prostredie sú dostupné v [dokumentácii](https://github.com/Majdos/42ptr-calc/blob/master/doc/source/instalacia.md)
+Najprv sa musíte premiestniť do priečinka, ktorý ste si naklonovali v predošlom kroku.    
+Následne presnejšie inštrukcie ako nainštalovať prostredie sú dostupné v [dokumentácii](https://github.com/Majdos/42ptr-calc/blob/master/doc/source/instalacia.md)
 
 ## Cieľové platformy
 
-Ubuntu 64bit
 Windows 64bit
 
 ## Autori
