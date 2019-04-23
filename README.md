@@ -19,8 +19,8 @@ Program kalkulačky je písaný v jazyku ``Python`` a GUI je riešené pomocou `
 Kalkulačka v sebe obsahuje sadu základných operácií (+,-,*,/,!,ln,sqrt,root,...).  
 Taktiež pomocou kalkulačky je možné premeniť čísla z binárnej,hexadecimálnej a oktálovej  
 sústavy na desiatkovú (pre zjednodušenie počtov).  
-Tieto funkcie, ale ešte nie je pridaná do výslednej podobe kalkulačky, a preto sme sa rozhodli  
-ju pridať v budúcej verzii a pridávame ju do mockupu, ktorý nájdete v zložke mockup
+Tieto funkcie, ale ešte nie sú pridané do výslednej podoby kalkulačky, a preto sme sa rozhodli  
+ich pridať v budúcej verzii a pridávame ich do mockupu kalkulačky, ktorý nájdete v zložke mockup
 Výzor kalkulačky sme nechali na preferencie užívateľa, to znamená, že sa prispôsobí téme,  
 ktorú má užívateľ nastavenú vo svojom systéme.
 
