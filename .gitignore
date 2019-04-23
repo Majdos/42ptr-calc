@@ -1,5 +1,8 @@
 # Build dir
 build
+docs/source/modules
+dist
+deploy/42calc-*
 
 # Compiled Object files
 *.o
@@ -17,11 +20,25 @@ build
 .vscode
 .idea
 
-# todo: doplnit ostatne IDE subory
-
 # Python stuff
 venv
 __pycache__
 
+# Compiled python modules.
+*.pyc
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+/*.egg
+
 # Docker files
 .env
+
+# Compiled i18n messages
+**/translations/**/*.mo
+
+# Extracted i18n templates
+**/translations/**/*.pot

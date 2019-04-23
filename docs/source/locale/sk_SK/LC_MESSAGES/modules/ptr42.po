@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Marián Lorinc, Lukáš Javorský, Patrik Ondriga, Peter
+# Vinarčík
+# This file is distributed under the same license as the 42ptr calc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 42ptr calc 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-20 16:03+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/modules/ptr42.rst:2
+msgid "ptr42 package"
+msgstr ""
+
+#: ../../source/modules/ptr42.rst:10
+msgid "Subpackages"
+msgstr ""
+
+#: ../../source/modules/ptr42.rst:18
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/modules/ptr42.rst:21
+msgid "ptr42.math42 module"
+msgstr ""
+
+#: of ptr42.math42.absolute_number:1
+msgid ""
+"Vypocita absolutnu hodnotu zadaneho cisla :param x: cislo pre vypocet "
+"absolutnej hodnoty :return: cislo x vratene v absolutnej hodnote"
+msgstr ""
+
+#: of ptr42.math42.addition:1
+msgid "Vypocita sucet cisel x a y"
+msgstr ""
+
+#: of ptr42.math42.addition ptr42.math42.bin_to_dec ptr42.math42.division
+#: ptr42.math42.factorial ptr42.math42.hex_to_dec ptr42.math42.ln
+#: ptr42.math42.multiplication ptr42.math42.natural_exponent
+#: ptr42.math42.negate ptr42.math42.oct_to_dec ptr42.math42.root
+#: ptr42.math42.sqrt ptr42.math42.subtract
+msgid "Parameters"
+msgstr ""
+
+#: of ptr42.math42.addition:6 ptr42.math42.subtract:3
+msgid "prvy operand"
+msgstr ""
+
+#: of ptr42.math42.addition:7 ptr42.math42.subtract:4
+msgid "druhy operand"
+msgstr ""
+
+#: of ptr42.math42.addition ptr42.math42.bin_to_dec ptr42.math42.division
+#: ptr42.math42.factorial ptr42.math42.hex_to_dec ptr42.math42.ln
+#: ptr42.math42.multiplication ptr42.math42.natural_exponent
+#: ptr42.math42.negate ptr42.math42.oct_to_dec ptr42.math42.root
+#: ptr42.math42.sqrt ptr42.math42.subtract
+msgid "Returns"
+msgstr ""
+
+#: of ptr42.math42.addition:8
+msgid "sucet dvoch operandov"
+msgstr ""
+
+#: of ptr42.math42.bin_to_dec:1
+msgid "Premeni binarne cislo na dekadicke"
+msgstr ""
+
+#: of ptr42.math42.bin_to_dec:3
+msgid "binarne cislo"
+msgstr ""
+
+#: of ptr42.math42.bin_to_dec:4
+msgid "Dekadicke cislo z binarneho vstupu"
+msgstr ""
+
+#: of ptr42.math42.bin_to_dec ptr42.math42.division ptr42.math42.factorial
+#: ptr42.math42.hex_to_dec ptr42.math42.ln ptr42.math42.oct_to_dec
+#: ptr42.math42.sqrt
+msgid "Raises"
+msgstr ""
+
+#: of ptr42.math42.bin_to_dec:5
+msgid "ak xb nie je cislo v binarnom tvare"
+msgstr ""
+
+#: of ptr42.math42.division:1
+msgid "Vypocita podiel dvoch cisel x a y"
+msgstr ""
+
+#: of ptr42.math42.division:3
+msgid "delenec"
+msgstr ""
+
+#: of ptr42.math42.division:4
+msgid "delitel"
+msgstr ""
+
+#: of ptr42.math42.division:5
+msgid "podiel delenca a delitela"
+msgstr ""
+
+#: of ptr42.math42.division:6
+msgid "ak y je 0"
+msgstr ""
+
+#: of ptr42.math42.factorial:1
+msgid "Vypocita factorial cisla x"
+msgstr ""
+
+#: of ptr42.math42.factorial:3
+msgid "cislo pre vypocet faktorialu"
+msgstr ""
+
+#: of ptr42.math42.factorial:4
+msgid "hodnota faktorialu"
+msgstr ""
+
+#: of ptr42.math42.factorial:5
+msgid "ak x je negativne alebo nie je prirodzene"
+msgstr ""
+
+#: of ptr42.math42.hex_to_dec:1
+msgid "Premeni hexadecimalne cislo na dekadicke"
+msgstr ""
+
+#: of ptr42.math42.hex_to_dec:3
+msgid "hexadecimalne cislo"
+msgstr ""
+
+#: of ptr42.math42.hex_to_dec:4
+msgid "Dekadicke cislo z hexadecimalneho vstupu"
+msgstr ""
+
+#: of ptr42.math42.hex_to_dec:5
+msgid "ak xb nie je cislo v hexadecimalnom tvare"
+msgstr ""
+
+#: of ptr42.math42.ln:1
+msgid "Vypocita prirodzeny logaritmus zadaneho cisla"
+msgstr ""
+
+#: of ptr42.math42.ln:3
+msgid "cislo pre vypocet prir. logaritmu"
+msgstr ""
+
+#: of ptr42.math42.ln:4
+msgid "vrati vysledok pre prir. logaritmus zadaneho cisla"
+msgstr ""
+
+#: of ptr42.math42.ln:5
+msgid "ak argument je negativny alebo 0"
+msgstr ""
+
+#: of ptr42.math42.multiplication:1
+msgid "Vypocita sucin dvoch cisel x a y"
+msgstr ""
+
+#: of ptr42.math42.multiplication:3
+msgid "prvy cinitel"
+msgstr ""
+
+#: of ptr42.math42.multiplication:4
+msgid "druhy cinitel"
+msgstr ""
+
+#: of ptr42.math42.multiplication:5
+msgid "sucin dvoch cinitelov"
+msgstr ""
+
+#: of ptr42.math42.natural_exponent:1
+msgid "Vypocita pre cislo x funkciu e^x"
+msgstr ""
+
+#: of ptr42.math42.natural_exponent:3
+msgid "cislo pre vypocet e^x"
+msgstr ""
+
+#: of ptr42.math42.natural_exponent:4
+msgid "vysledok danej funkcie pre x"
+msgstr ""
+
+#: of ptr42.math42.negate:1
+msgid "Zneguje cislo x"
+msgstr ""
+
+#: of ptr42.math42.negate:3
+msgid "cislo na znegovanie"
+msgstr ""
+
+#: of ptr42.math42.negate:4
+msgid "znegovane cislo"
+msgstr ""
+
+#: of ptr42.math42.oct_to_dec:1
+msgid "Premeni oktalove cislo na dekadicke"
+msgstr ""
+
+#: of ptr42.math42.oct_to_dec:3
+msgid "oktalove cislo"
+msgstr ""
+
+#: of ptr42.math42.oct_to_dec:4
+msgid "Dekadicke cislo z oktaloveho vstupu"
+msgstr ""
+
+#: of ptr42.math42.oct_to_dec:5
+msgid "ak xb nie je cislo v oktalovom tvare"
+msgstr ""
+
+#: of ptr42.math42.root:1
+msgid "Vypocita y-ntu odmocninu z cisla x"
+msgstr ""
+
+#: of ptr42.math42.root:3
+msgid "cislo z ktoreho chceme odmocninu"
+msgstr ""
+
+#: of ptr42.math42.root:4
+msgid "kolka odmocnina"
+msgstr ""
+
+#: of ptr42.math42.root:5
+msgid "Y-nta odmocnina z x"
+msgstr ""
+
+#: of ptr42.math42.sqrt:1
+msgid "Vypocita obecnu odmocninu (druhu odmocninu) z cisla x"
+msgstr ""
+
+#: of ptr42.math42.sqrt:3
+msgid "cislo pre vypocet obecnej odmocniny"
+msgstr ""
+
+#: of ptr42.math42.sqrt:4
+msgid "Obecna odmocnina cisla x"
+msgstr ""
+
+#: of ptr42.math42.sqrt:5
+msgid "ak argument je negativny"
+msgstr ""
+
+#: of ptr42.math42.subtract:1
+msgid "Vypocita rozdiel cisel x a y"
+msgstr ""
+
+#: of ptr42.math42.subtract:5
+msgid "rozdiel dvoch operandov"
+msgstr ""
+
