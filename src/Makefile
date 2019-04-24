@@ -1,21 +1,21 @@
 LANGUAGE ?= sk_SK
 
-DOCS_DIRECTORY_NAME=docs
-DOCS_LOCATION=..
-DOCS_API_LOCATION=$(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/source/modules
-SRC=./ptr42
+DOCS_DIRECTORY_NAME = docs
+DOCS_LOCATION = ..
+DOCS_API_LOCATION = $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/source/modules
+SRC = ./ptr42
 
-TESTS_DIRECTORY_NAME=tests
+TESTS_DIRECTORY_NAME = tests
 
-I18N_DIRECTORY=./resources/translations
-I18N_DOMAIN=messages
+I18N_DIRECTORY = ./resources/translations
+I18N_DOMAIN = messages
 
-PROJECT_ROOT=..
-IVS_ZIP_NAME=xlorin01_xjavor20_xondri08_xvinar00.zip
-IVS_DOC_DIR=$(PROJECT_ROOT)/temp/doc
-IVS_INSTALL_DIR=$(PROJECT_ROOT)/temp/install
-IVS_REPO_DIR=$(PROJECT_ROOT)/temp/repo
-IVS_REQUIRED_DIRS $(IVS_DOC_DIR) $(IVS_INSTALL_DIR) $(IVS_REPO_DIR)
+PROJECT_ROOT = ..
+IVS_ZIP_NAME = xlorin01_xjavor20_xondri08_xvinar00.zip
+IVS_DOC_DIR = $(PROJECT_ROOT)/temp/doc
+IVS_INSTALL_DIR = $(PROJECT_ROOT)/temp/install
+IVS_REPO_DIR = $(PROJECT_ROOT)/temp/repo
+IVS_REQUIRED_DIRS = $(IVS_DOC_DIR) $(IVS_INSTALL_DIR) $(IVS_REPO_DIR)
 
 .PHONY: all pack clean test all-tests doc run install profile i18n_extract i18n_init i18n_update i18n_compile \
 	prepare_dev_environment win_installer
@@ -23,20 +23,21 @@ IVS_REQUIRED_DIRS $(IVS_DOC_DIR) $(IVS_INSTALL_DIR) $(IVS_REPO_DIR)
 all: install i18n_compile profile
 
 pack:
+	$(RM) -r $(PROJECT_ROOT)/temp
 	mkdir -p $(IVS_REQUIRED_DIRS)
-	cp -r $(DOCS_DIRECTORY_NAME)/build/html/* $(IVS_REPO_DIR)
+	cp -r $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/build/html/* $(IVS_REPO_DIR)
 	cp build/nsis/42ptr_calc_1.0.exe $(IVS_INSTALL_DIR)
 	cd $(PROJECT_ROOT) && git archive --format zip -9 -o $(IVS_ZIP_NAME) master
 
 	mv $(PROJECT_ROOT)/$(IVS_ZIP_NAME) $(IVS_REPO_DIR)/
 	cd $(IVS_REPO_DIR) && unzip $(IVS_ZIP_NAME) && $(RM) $(IVS_ZIP_NAME)
-	cp -r .git $(IVS_REPO_DIR)/
+	cp -r $(PROJECT_ROOT)/.git $(IVS_REPO_DIR)/
 	cd $(PROJECT_ROOT)/temp && zip -r ../$(IVS_ZIP_NAME) *
 	$(RM) -r $(PROJECT_ROOT)/temp
 
 clean:
-	$(RM) -r build *.egg-info
-	$(RM) -r $(DOCS_DIRECTORY_NAME)/build
+	$(RM) -r src/build src/*.egg-info
+	$(RM) -r $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/build
 
 doc:
 	$(RM) -r $(DOCS_API_LOCATION)
