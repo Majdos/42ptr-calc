@@ -1,28 +1,38 @@
 LANGUAGE ?= sk_SK
 
 DOCS_DIRECTORY_NAME=docs
-DOCS_LOCATION=.
+DOCS_LOCATION=..
 DOCS_API_LOCATION=$(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/source/modules
+SRC=./ptr42
 
 TESTS_DIRECTORY_NAME=tests
-TESTS_LOCATION=.
 
 I18N_DIRECTORY=./resources/translations
 I18N_DOMAIN=messages
 
-SRC=./ptr42
+PROJECT_ROOT=..
+IVS_ZIP_NAME=xlorin01_xjavor20_xondri08_xvinar00.zip
+IVS_DOC_DIR=$(PROJECT_ROOT)/temp/doc
+IVS_INSTALL_DIR=$(PROJECT_ROOT)/temp/install
+IVS_REPO_DIR=$(PROJECT_ROOT)/temp/repo
+IVS_REQUIRED_DIRS $(IVS_DOC_DIR) $(IVS_INSTALL_DIR) $(IVS_REPO_DIR)
 
-.PHONY: all pack clean test all-tests doc run install profile i18n_extract i18n_init i18n_update i18n_compile
+.PHONY: all pack clean test all-tests doc run install profile i18n_extract i18n_init i18n_update i18n_compile \
+	prepare_dev_environment win_installer
 
 all: install i18n_compile profile
 
-pack: clean
-	mkdir -p install doc repo
-	cp -r $(DOCS_DIRECTORY_NAME)/build/html/* doc/
-	cp build/nsis/42ptr_calc_1.0.exe install/
-	cp -r * repo/
-	zip repo --out xlorin01_xjavor20_xondri08_xvinar00.zip
-	$(RM) -r repo
+pack:
+	mkdir -p $(IVS_REQUIRED_DIRS)
+	cp -r $(DOCS_DIRECTORY_NAME)/build/html/* $(IVS_REPO_DIR)
+	cp build/nsis/42ptr_calc_1.0.exe $(IVS_INSTALL_DIR)
+	cd $(PROJECT_ROOT) && git archive --format zip -9 -o $(IVS_ZIP_NAME) master
+
+	mv $(PROJECT_ROOT)/$(IVS_ZIP_NAME) $(IVS_REPO_DIR)/
+	cd $(IVS_REPO_DIR) && unzip $(IVS_ZIP_NAME) && $(RM) $(IVS_ZIP_NAME)
+	cp -r .git $(IVS_REPO_DIR)/
+	cd $(PROJECT_ROOT)/temp && zip -r ../$(IVS_ZIP_NAME) *
+	$(RM) -r $(PROJECT_ROOT)/temp
 
 clean:
 	$(RM) -r build *.egg-info
@@ -33,8 +43,8 @@ doc:
 	pipenv run sphinx-apidoc -o $(DOCS_API_LOCATION) -M --implicit-namespaces \
 		--ext-autodoc --ext-githubpages $(SRC)
 
-	cd $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/source && pipenv run sphinx-build -b html -D language=$(LANGUAGE) \
-		. ../build/html/$(LANGUAGE)
+	pipenv run bash -c 'cd $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/source && sphinx-build -b html -D language=$(LANGUAGE) \
+		. ../build/html/$(LANGUAGE)'
 
 run:
 	pipenv run bash -c "python setup.py develop && calc42"
@@ -62,3 +72,8 @@ i18n_compile:
 
 profile:
 	pipenv run bash -c "python setup.py develop > /dev/null && profile"
+
+win_installer:
+	pipenv run pynsist installer.cfg
+
+prepare_dev_environment: install i18n_compile

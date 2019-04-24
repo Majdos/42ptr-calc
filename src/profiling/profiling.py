@@ -1,8 +1,8 @@
 import cProfile
 import sys
 
-from ptr42.math_language.lexer.default_lexer import get_default_lexer
-from ptr42.math_language.parser.parser import MathParser
+from ptr42 import get_default_lexer
+from ptr42 import MathParser
 
 
 def calculator(expresion: str) -> float:
