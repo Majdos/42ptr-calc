@@ -1,0 +1,2 @@
+recursive-include resources/themes *.css
+recursive-include resources/translations *

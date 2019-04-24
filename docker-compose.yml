@@ -1,0 +1,11 @@
+version: "3.6"
+services:
+  archmake:
+      build:
+        context: .
+      volumes:
+        - ${PROJECT_DIR}:/app
+      container_name: archmake
+      working_dir: /app
+      tty: true
+      stdin_open: true

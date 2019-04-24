@@ -9,7 +9,7 @@ import os
 from setuptools import setup, find_packages
 
 # Meta information
-version = open('VERSION').read().strip()
+version = open('../VERSION').read().strip()
 dirname = os.path.dirname(__file__)
 
 setup(
@@ -19,7 +19,7 @@ setup(
     author_email='xlorin01@vutbr.cz',
     url='',
     description='A minimalistic calculator',
-    long_description=open('README.md').read(),
+    long_description=open('../README.md').read(),
     classifiers=[
         'License :: OSI Approved :: GNU General Public License ver. 3 (GPL3)',
         'Operating System :: POSIX',
@@ -51,6 +51,8 @@ setup(
     entry_points={
         'gui_scripts': [
             'calc42 = ptr42.main:main'],
+        'console_scripts': [
+            'profile = profiling.profiling:main'],
     },
 
     # Other configurations
