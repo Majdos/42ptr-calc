@@ -1,4 +1,4 @@
-xlorin01 100 (základ GUI a základní mat. operace)
-xjavor20 100 (pokročilé mat. operace)
-xondri08 100 (profiling, instalátor)
-xvinar00 100 (testy, dokumentace)
+xlorin01 100 (základ GUI, matematický interpretér, inštalátor, dokumentácia)
+xjavor20 100 (pokročilé mat. operácie, testy mat. knižnice, dokumentácia)
+xondri08 100 (profiling, testy mat. knižnice, testy interpretéra)
+xvinar00 100 (testy mat. knižnice, manuál, pokročilé mat. operácie)

@@ -25,7 +25,7 @@ all: install i18n_compile profile
 pack:
 	$(RM) -r $(PROJECT_ROOT)/temp
 	mkdir -p $(IVS_REQUIRED_DIRS)
-	cp -r $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/build/html/* $(IVS_REPO_DIR)
+	cp -r $(DOCS_LOCATION)/$(DOCS_DIRECTORY_NAME)/build/html/* $(IVS_DOC_DIR)
 	cp build/nsis/42ptr_calc_1.0.exe $(IVS_INSTALL_DIR)
 	cd $(PROJECT_ROOT) && git archive --format zip -9 -o $(IVS_ZIP_NAME) master
 
